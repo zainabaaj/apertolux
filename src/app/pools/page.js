@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from 'react';
 
 export default function Pools() {
@@ -47,8 +47,21 @@ export default function Pools() {
         <div style={{ minHeight: '600px' }}>
           {activeTab === 'covers' ? (
             <div className="feature-section" style={{ paddingTop: '2rem', borderBottom: 'none' }}>
-              <div className="feature-image-placeholder" style={{ height: '550px' }}>
-                [ High-Res Slatted Cover Image ]
+              <div
+                className="feature-image-placeholder"
+                style={{
+                  height: "550px",
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                <Image
+                  src="/pools/sliding/slide/2.png"
+                  alt="Slatted Pool Cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="feature-content">
                 <h2 style={{ fontSize: '2.8rem' }}>Invisible Protection. <br/>Natural Heating.</h2>
@@ -66,8 +79,14 @@ export default function Pools() {
             </div>
           ) : (
             <div className="feature-section" style={{ paddingTop: '2rem', borderBottom: 'none', flexDirection: 'row-reverse' }}>
-              <div className="feature-image-placeholder" style={{ height: '550px', backgroundColor: '#1B263B' }}>
-                [ High-Res Movable Floor Image ]
+              <div className="feature-image-placeholder" style={{ height: '550px', position: 'relative', overflow: 'hidden' }}>
+                 <Image
+                  src="/pools/movable-floor/4.png"
+                  alt="Slatted Pool Cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="feature-content">
                 <h2 style={{ fontSize: '2.8rem' }}>Reclaim Your <br/>Square Footage.</h2>

@@ -74,18 +74,18 @@ export default function Contact() {
           </p>
 
           <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.2rem', color: 'var(--navy-primary)', marginBottom: '0.5rem' }}>Design Studio & Showroom</h3>
+            <h3 style={{ fontSize: '1.2rem', color: 'var(--navy-primary)', marginBottom: '0.5rem' }}>Main Office OpenAlum</h3>
             <p style={{ color: 'var(--text-muted)' }}>
-              100 Luxury Lane, Suite 400<br />
-              Design District, NY 10001
+              
+              Nazareth, 2004 st. Zip code: 16955
             </p>
           </div>
 
           <div style={{ marginBottom: '2rem' }}>
             <h3 style={{ fontSize: '1.2rem', color: 'var(--navy-primary)', marginBottom: '0.5rem' }}>Direct Contact</h3>
             <p style={{ color: 'var(--text-muted)' }}>
-              Phone: +1 (800) 555-0199<br />
-              Email: info@eviez.com.tr
+              Phone: +972 52-839-9655<br />
+              Email: info@apertolux.com
             </p>
           </div>
         </div>

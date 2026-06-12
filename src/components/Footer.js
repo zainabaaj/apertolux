@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div>
           <h3 style={{ marginBottom: '1rem' }}>Contact</h3>
-          <p style={{ color: '#ccc', marginBottom: '1rem' }}>Email: info@apertolux.com<br/>Phone: +1 (800) 555-0199</p>
+          <p style={{ color: '#ccc', marginBottom: '1rem' }}>Email: info@apertolux.com<br/>Phone: +972 52-839-9655</p>
         </div>
       </div>
 
