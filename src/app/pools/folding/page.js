@@ -72,7 +72,7 @@ export default function FoldingDeckPage() {
         {/* Feature 3: Smart Control & Finishes */}
         <div className="feature-section" style={{ borderBottom: 'none' }}>
           <div className="feature-image-placeholder" style={{ height: '450px' }}>
-                        <Image src="/folding/4-1.jpg" alt="Folding Deck Load Bearing" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} width={800} height={450} ></Image>
+                        <Image src="/folding/4-1.jpg" alt="Folding Deck Load Bearing" width={800} height={450} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }}  ></Image>
 
           </div>
           <div className="feature-content">
