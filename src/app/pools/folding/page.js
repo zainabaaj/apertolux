@@ -32,7 +32,7 @@ export default function FoldingDeckPage() {
         {/* Feature 1: Load Bearing */}
         <div className="feature-section" style={{ paddingTop: '2rem', borderBottom: 'none' }}>
           <div className="feature-image-placeholder" style={{ height: '450px' }}>
-            <Image src="/folding/1.png" alt="Folding Deck Load Bearing" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} width={800} height={450} ></Image>
+            <Image src="/folding/fold/1.png" alt="Folding Deck Load Bearing" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} width={800} height={450} ></Image>
           </div>
           <div className="feature-content">
             <h3 style={{ fontSize: '2.2rem', color: 'var(--navy-primary)', marginBottom: '1rem' }}>Unmatched Load-Bearing Capacity</h3>
@@ -50,7 +50,7 @@ export default function FoldingDeckPage() {
         {/* Feature 2: The Fold Mechanism */}
         <div className="feature-section" style={{ borderBottom: 'none', flexDirection: 'row-reverse' }}>
           <div className="feature-image-placeholder" style={{ height: '450px', backgroundColor: 'var(--navy-light)' }}>
-                        <Image src="/folding/3.png" alt="Folding Deck Load Bearing" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} width={800} height={450} ></Image>
+                        <Image src="/folding/fold/3.png" alt="Folding Deck Load Bearing" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }} width={800} height={450} ></Image>
 
           </div>
           <div className="feature-content">
@@ -72,7 +72,7 @@ export default function FoldingDeckPage() {
         {/* Feature 3: Smart Control & Finishes */}
         <div className="feature-section" style={{ borderBottom: 'none' }}>
           <div className="feature-image-placeholder" style={{ height: '450px' }}>
-                        <Image src="/folding/4-1.jpg" alt="Folding Deck Load Bearing" width={800} height={450} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }}  ></Image>
+                        <Image src="/folding/fold/4-1.jpg" alt="Folding Deck Load Bearing" width={800} height={450} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px' }}  ></Image>
 
           </div>
           <div className="feature-content">
