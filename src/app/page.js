@@ -1,48 +1,43 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const collections = [
   {
     title: "Smart Pools",
     description:
       "Movable pool floors, automatic covers, and intelligent water solutions.",
     image:
-      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1600&auto=format&fit=crop",
+      "/pools/sliding/slide/2.png",
   },
   {
     title: "Pergolas",
     description:
       "Bioclimatic and retractable pergola systems designed for modern living.",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop",
+      "/pergolas/aluminum/4.png",
   },
   {
     title: "Smart Carports",
     description:
       "Elegant vehicle protection engineered for all weather conditions.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop",
+      "/pergolas/carport/1.png",
   },
-  {
-    title: "Shades & Shutters",
-    description:
-      "Automated shading and privacy solutions for luxury spaces.",
-    image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600&auto=format&fit=crop",
-  },
+ 
   {
     title: "Hot Tubs",
     description:
       "Premium wellness experiences tailored to your lifestyle.",
     image:
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1600&auto=format&fit=crop",
+      "/hot-tubs/comfort/comfort-hero.png",
   },
-  {
-    title: "Outdoor Living",
+   {
+    title: "Shades & Shutters",
     description:
-      "Integrated outdoor environments that redefine luxury.",
+      "Automated shading and privacy solutions for luxury spaces.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop",
+      "/shades-shutters/hero.png",
   },
+ 
 ];
 
 export default function HomePage() {
@@ -57,7 +52,7 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2200&auto=format&fit=crop')",
+              "url('/hero.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/60" />
@@ -134,7 +129,9 @@ export default function HomePage() {
               className="group h-full overflow-hidden rounded-[32px] border border-zinc-800 bg-zinc-900"
             >
               <div className="overflow-hidden">
-                <img
+                <Image
+                  width={400}
+                  height={300}
                   src={item.image}
                   alt={item.title}
                   className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -188,8 +185,10 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <img
-            src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop"
+          <Image
+            width={1600}
+            height={1000}
+            src="/proj1.png"
             alt="Luxury Project"
             className="w-full aspect-[16/10] object-cover rounded-[32px]"
           />
@@ -261,7 +260,7 @@ export default function HomePage() {
       <section className="py-20 md:py-28 xl:py-36">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="mb-6 text-3xl md:text-5xl xl:text-6xl">
-            Let’s Create Your Outdoor Masterpiece
+            Let&apos;s Create Your Outdoor Masterpiece
           </h2>
 
           <p className="mb-10 text-base md:text-lg text-zinc-400">
