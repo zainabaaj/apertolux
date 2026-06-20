@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 export default function Navbar() {
   // Tracks which dropdown is currently open
   const [activeMenu, setActiveMenu] = useState(null);
@@ -26,7 +26,7 @@ export default function Navbar() {
         { name: 'Fixed Glass', path: '/pergolas/fixed-glass' },
         { name: 'Fixed and Retractable Aluminum', path: '/pergolas/aluminum' },
         { name: 'Winter Garden', path: '/pergolas/winter-garden' },
-        { name: 'Sun Sails', path: '/pergolas/sun-sails' },
+        { name: 'Parasols', path: '/pergolas/parasols' },
 
       ]
     },
