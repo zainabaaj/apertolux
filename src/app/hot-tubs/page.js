@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Assuming you have your standard slider component
-import PoolSlider from "@/components/PoolSlider"; 
-import "swiper/css";
-import "swiper/css/navigation";
 
 export const metadata = {
   title: 'Luxury Nordic Hot Tubs | Apertolux',
@@ -81,7 +77,7 @@ export default function HotTubsPage() {
               }}
             >
               <Image
-                src="/hot-tubs/original-collection.png" // Update with your actual image path
+                src="/hot-tubs/original/original-hero.png" // Update with your actual image path
                 alt="Original ThermoWood Hot Tub"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -117,7 +113,7 @@ export default function HotTubsPage() {
               }}
             >
               <Image
-                src="/hot-tubs/comfort-collection.png" // Update with your actual image path
+                src="/hot-tubs/comfort/comfort-hero.png" // Update with your actual image path
                 alt="Comfort Family Hot Tub"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -153,7 +149,7 @@ export default function HotTubsPage() {
               }}
             >
               <Image
-                src="/hot-tubs/premium-collection.png" // Update with your actual image path
+                src="/hot-tubs/premium/premium-hero2.png" // Update with your actual image path
                 alt="Premium Hot Tub with WaterJets"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -162,11 +158,7 @@ export default function HotTubsPage() {
           </div>
         </div>
 
-        {/* =========================================
-            PROJECT GALLERY SLIDER SECTION
-        ========================================= */}
-        <PoolSlider />
-       
+    
         {/* =========================================
             TECHNICAL SPECIFICATIONS TABLE
         ========================================= */}

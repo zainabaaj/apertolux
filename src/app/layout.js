@@ -20,9 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
         <Navbar />
-        <main style={{ flex: 1, paddingBottom: '4rem' }}>
+        <main className="flex-1">
           {children}
         </main>
         <Footer />

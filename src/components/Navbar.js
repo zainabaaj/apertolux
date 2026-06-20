@@ -1,106 +1,138 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 export default function Navbar() {
-  // Tracks which dropdown is currently open
   const [activeMenu, setActiveMenu] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { 
-      name: 'Pools', 
-      path: '/pools',
+    {
+      name: "Pools",
+      path: "/pools",
       sub: [
-        { name: 'Folding Deck Covers', path: '/pools/folding' },
-        { name: 'Sliding Covers', path: '/pools/sliding' },
-        { name: 'Movable Floors', path: '/pools/movable-floor' }
-      ]
+        { name: "Folding Deck Covers", path: "/pools/folding" },
+        { name: "Sliding Covers", path: "/pools/sliding" },
+        { name: "Movable Floors", path: "/pools/movable-floor" },
+      ],
     },
-    { 
-      name: 'Pergolas', 
-      path: '/pergolas',
+    {
+      name: "Pergolas",
+      path: "/pergolas",
       sub: [
-        { name: 'Retractable Awning', path: '/pergolas/retractable-awning' },
-        { name: 'Electric Retractable Carport', path: '/pergolas/carport' },
-        { name: 'Fixed Glass', path: '/pergolas/fixed-glass' },
-        { name: 'Fixed and Retractable Aluminum', path: '/pergolas/aluminum' },
-        { name: 'Winter Garden', path: '/pergolas/winter-garden' },
-        { name: 'Parasols', path: '/pergolas/parasols' },
-
-      ]
+        { name: "Retractable Awning", path: "/pergolas/retractable-awning" },
+        { name: "Electric Retractable Carport", path: "/pergolas/carport" },
+        { name: "Fixed Glass", path: "/pergolas/fixed-glass" },
+        {
+          name: "Fixed and Retractable Aluminum",
+          path: "/pergolas/aluminum",
+        },
+        { name: "Winter Garden", path: "/pergolas/winter-garden" },
+        { name: "Parasols", path: "/pergolas/parasols" },
+      ],
     },
-    { 
-      name: 'Hot Tubs', 
-      path: '/hot-tubs',
+    {
+      name: "Hot Tubs",
+      path: "/hot-tubs",
       sub: [
-        { name: 'Original', path: '/hot-tubs/original' },
-        { name: 'Comfort', path: '/hot-tubs/comfort' },
-        { name: 'Premium', path: '/hot-tubs/premium' }
-      ]
+        { name: "Original", path: "/hot-tubs/original" },
+        { name: "Comfort", path: "/hot-tubs/comfort" },
+        { name: "Premium", path: "/hot-tubs/premium" },
+      ],
     },
-    { 
-      name: 'Shades & Shutters', 
-      path: '/shades-shutters',
+    {
+      name: "Shades & Shutters",
+      path: "/shades-shutters",
       sub: [
-        { name: 'Motorized Zip Screens', path: '/shades-shutters/zip-screens' },
-        { name: 'Roller Shutters', path: '/shades-shutters/roller-shutters' },
-        { name: 'Electric Outdoor Blinds', path: '/shades-shutters/outdoor-blinds' },
-        { name: 'Horizontal Sliding Walls', path: '/shades-shutters/sliding-walls' }
-      ]
+        {
+          name: "Motorized Zip Screens",
+          path: "/shades-shutters/zip-screens",
+        },
+        {
+          name: "Roller Shutters",
+          path: "/shades-shutters/roller-shutters",
+        },
+        {
+          name: "Electric Outdoor Blinds",
+          path: "/shades-shutters/outdoor-blinds",
+        },
+        {
+          name: "Horizontal Sliding Walls",
+          path: "/shades-shutters/sliding-walls",
+        },
+      ],
     },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <header style={styles.header}>
-      <nav style={styles.nav}>
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
+      <nav className="mx-auto flex h-20 lg:h-24 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Logo */}
-        <Link href="/" style={styles.logo}>
-          APERTOLUX
-        </Link>
-        
-        {/* Main Menu */}
-        <ul style={styles.menuList}>
-          {menuItems.map((item, index) => (
-            <li 
-              key={index} 
-              style={styles.menuItem}
+<Link href="/" className="flex items-center gap-4">
+  <Image
+     width={24}
+    height={24}
+    src="/logo.png"
+    alt="Apertolux"
+    className="h-12 w-12"
+  />
+
+  <div className="flex flex-col">
+    <span className="text-3xl font-bold tracking-[0.15em] text-[#0A192F]">
+      APERTOLUX
+    </span>
+
+    <span className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
+      Premium Outdoor Living
+    </span>
+  </div>
+</Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center gap-8 xl:gap-12">
+          {menuItems.map((item) => (
+            <li
+              key={item.name}
+              className="relative"
               onMouseEnter={() => setActiveMenu(item.name)}
               onMouseLeave={() => setActiveMenu(null)}
             >
-              <Link href={item.path} style={styles.navLink}>
+              <Link
+                href={item.path}
+                className="flex items-center px-2 py-8 text-[17px] xl:text-lg font-semibold text-[#172A45] transition-colors duration-200 hover:text-[#0A192F]"
+              >
                 {item.name}
+
                 {item.sub && (
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginLeft: '4px', marginTop: '2px' }}>
-                    <polyline points="6 9 12 15 18 9"></polyline>
+                  <svg
+                    className="ml-2 h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
                   </svg>
                 )}
               </Link>
 
-              {/* Dropdown Menu - Only renders if there are sub-items AND it is currently hovered */}
               {item.sub && (
-                <div style={{
-                  ...styles.dropdown,
-                  opacity: activeMenu === item.name ? 1 : 0,
-                  visibility: activeMenu === item.name ? 'visible' : 'hidden',
-                  transform: activeMenu === item.name ? 'translateY(0)' : 'translateY(10px)',
-                }}>
-                  {item.sub.map((subItem, subIndex) => (
-                    <Link 
-                      key={subIndex} 
-                      href={subItem.path} 
-                      style={styles.dropdownItem}
-                      onMouseEnter={(e) => {
-                        e.target.style.backgroundColor = '#f8f9fa';
-                        e.target.style.color = '#0A192F';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.backgroundColor = 'transparent';
-                        e.target.style.color = '#555';
-                      }}
+                <div
+                  className={`absolute left-0 top-full min-w-[320px] rounded-b-xl border border-gray-200 border-t-[3px] border-t-[#0A192F] bg-white py-3 shadow-2xl transition-all duration-200 ${
+                    activeMenu === item.name
+                      ? "visible translate-y-0 opacity-100"
+                      : "invisible translate-y-2 opacity-0"
+                  }`}
+                >
+                  {item.sub.map((subItem) => (
+                    <Link
+                      key={subItem.name}
+                      href={subItem.path}
+                      className="block px-8 py-4 text-base font-medium text-gray-600 transition-all duration-200 hover:bg-gray-50 hover:pl-10 hover:text-[#0A192F]"
                     >
                       {subItem.name}
                     </Link>
@@ -111,84 +143,66 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          <svg
+            className="h-7 w-7 text-[#0A192F]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+          >
+            {mobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="border-t border-gray-200 bg-white lg:hidden">
+          <div className="px-5 py-4">
+            {menuItems.map((item) => (
+              <div key={item.name} className="border-b border-gray-100 py-3">
+                <Link
+                  href={item.path}
+                  className="block py-2 text-lg font-semibold text-[#172A45]"
+                >
+                  {item.name}
+                </Link>
+
+                {item.sub && (
+                  <div className="mt-2 ml-4 space-y-2">
+                    {item.sub.map((subItem) => (
+                      <Link
+                        key={subItem.name}
+                        href={subItem.path}
+                        className="block py-2 text-base text-gray-600"
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   );
 }
-
-// All styles are encapsulated here to prevent any global CSS conflicts
-const styles = {
-  header: {
-    backgroundColor: '#ffffff',
-    boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-    position: 'sticky',
-    top: 0,
-    zIndex: 9999,
-    borderBottom: '1px solid #eaeaea',
-  },
-  nav: {
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '0 2rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '90px',
-  },
-  logo: {
-    color: '#0A192F', // Navy Primary
-    fontSize: '1.8rem',
-    fontWeight: 'bold',
-    letterSpacing: '1px',
-    textDecoration: 'none',
-  },
-  menuList: {
-    display: 'flex',
-    listStyle: 'none',
-    gap: '2rem',
-    margin: 0,
-    padding: 0,
-    height: '100%',
-    alignItems: 'center',
-  },
-  menuItem: {
-    position: 'relative',
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-  },
-  navLink: {
-    textDecoration: 'none',
-    color: '#172A45', // Navy Light
-    fontWeight: '600',
-    fontSize: '1rem',
-    display: 'flex',
-    alignItems: 'center',
-    padding: '1rem 0',
-    cursor: 'pointer',
-  },
-  dropdown: {
-    position: 'absolute',
-    top: '90px', // Matches header height
-    left: '-1rem',
-    backgroundColor: '#ffffff',
-    minWidth: '260px',
-    boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
-    borderRadius: '0 0 8px 8px',
-    border: '1px solid #eaeaea',
-    borderTop: '3px solid #0A192F',
-    display: 'flex',
-    flexDirection: 'column',
-    transition: 'all 0.2s ease-in-out',
-    padding: '0.5rem 0',
-  },
-  dropdownItem: {
-    padding: '0.8rem 1.5rem',
-    color: '#555',
-    textDecoration: 'none',
-    fontSize: '0.95rem',
-    fontWeight: '500',
-    transition: 'all 0.2s ease',
-    display: 'block',
-  }
-};
