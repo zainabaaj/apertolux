@@ -21,12 +21,13 @@ export default function Navbar() {
       name: 'Pergolas', 
       path: '/pergolas',
       sub: [
-        { name: 'Smart Folding', path: '/pergolas/smart-folding' },
-        { name: 'Electric Retractable Carport', path: '/pergolas/carport' },
-        { name: 'Sun Sails', path: '/pergolas/sun-sails' },
-        { name: 'Aluminum & Wooden', path: '/pergolas/aluminum-wooden' },
         { name: 'Retractable Awning', path: '/pergolas/retractable-awning' },
-        { name: 'Winter Garden', path: '/pergolas/winter-garden' }
+        { name: 'Electric Retractable Carport', path: '/pergolas/carport' },
+        { name: 'Fixed Glass', path: '/pergolas/fixed-glass' },
+        { name: 'Fixed and Retractable Aluminum', path: '/pergolas/aluminum' },
+        { name: 'Winter Garden', path: '/pergolas/winter-garden' },
+        { name: 'Sun Sails', path: '/pergolas/sun-sails' },
+
       ]
     },
     { 

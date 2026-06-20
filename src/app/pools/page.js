@@ -1,19 +1,36 @@
 "use client";
 import Image from "next/image";
 import { useState } from 'react';
-
+import Link from 'next/link';
 export default function Pools() {
   const [activeTab, setActiveTab] = useState('covers');
 
   return (
     <div style={{ animation: 'fadeIn 0.5s ease-in' }}>
       {/* High-End Hero Section */}
-      <div className="page-hero" style={{ minHeight: '45vh' }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Smart Pool Solutions</h1>
-        <p style={{ fontSize: '1.2rem', color: '#ccc', maxWidth: '700px' }}>
-          Seamlessly blend safety, automation, and architectural beauty with our invisible pool covers and movable floors.
-        </p>
-      </div>
+      <section className="relative h-[700px] overflow-hidden">
+  <Image
+    src="/pools/sliding/slide/3.png"
+    alt="ApertoLux Folding Pool Cover"
+    fill
+    priority
+    className="object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/40" />
+
+  <div className="absolute inset-0 flex items-center justify-center px-6">
+        <div className="z-10 flex flex-col items-center justify-center text-center text-white gap-6 max-w-4xl">
+
+      <h1 className="text-5xl md:text-7xl font-bold">
+        Smart Pool Solutions 
+      </h1>
+      <p className="mt-6 text-xl max-w-2xl mx-auto">
+        Elegant, secure, and engineered for year-round pool protection.
+      </p>
+    </div>
+  </div>
+</section>
 
       <div className="container" style={{ marginTop: '-2rem', position: 'relative', zIndex: 10 }}>
         {/* Luxury Tab Navigation */}
@@ -74,7 +91,9 @@ export default function Pools() {
                   <li style={listItemStyle}>✓ Compliant with NF P90-308 safety standards</li>
                   <li style={listItemStyle}>✓ Smartphone app integration</li>
                 </ul>
-                <button className="btn-outline">View Cover Specifications</button>
+                <Link href="/pools/sliding" className="btn-outline">
+                  View Cover Specifications
+                </Link>
               </div>
             </div>
           ) : (
@@ -99,7 +118,9 @@ export default function Pools() {
                   <li style={listItemStyle}>✓ Finished with your exact premium patio tile or wood</li>
                   <li style={listItemStyle}>✓ Whisper-quiet hydraulic lifting system</li>
                 </ul>
-                <button className="btn-outline">Explore Movable Floors</button>
+               <Link href="/pools/movable-floor" className="btn-outline">
+  Explore Movable Floors
+</Link>
               </div>
             </div>
           )}

@@ -10,12 +10,32 @@ export default function FoldingDeckPage() {
     <div style={{ animation: 'fadeIn 0.5s ease-in' }}>
       
       {/* High-End Hero Section */}
-      <div className="page-hero" style={{ minHeight: '45vh', backgroundImage: 'linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.8))' }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', color: 'white' }}>Folding Deck Covers</h1>
-        <p style={{ fontSize: '1.2rem', color: '#ccc', maxWidth: '700px' }}>
-          One click to unlock quality life. Transform your swimming pool into a solid, load-bearing entertainment space in seconds.
-        </p>
-      </div>
+<section className="relative h-[700px] overflow-hidden">
+  <Image
+    src="/pools/folding/fold3-1.png"
+    alt="ApertoLux Sliding Deck Cover"
+    fill
+    priority
+    className="object-cover"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40" />
+
+  {/* Content */}
+  <div className="absolute inset-0 flex items-center justify-center px-6">
+    <div className="z-10 flex flex-col items-center justify-center text-center text-white gap-6 max-w-4xl">
+      <h1 className="text-5xl md:text-7xl font-bold leading-none m-0">
+        Sliding Deck Covers
+      </h1>
+
+      <p className="text-xl md:text-2xl leading-relaxed m-0 max-w-2xl">
+        One click to unlock quality life. Transform your swimming pool into a
+        solid, load-bearing entertainment space in seconds.
+      </p>
+    </div>
+  </div>
+</section>
 
       <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
         

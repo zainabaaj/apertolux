@@ -1,17 +1,44 @@
+import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section style={{ backgroundColor: 'var(--navy-primary)', color: 'white', padding: '120px 0', textAlign: 'center' }}>
-        <div className="container">
-          <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', lineHeight: '1.1' }}>Redefine Your<br/>Outdoor Experience</h1>
-          <p style={{ fontSize: '1.2rem', color: '#ccc', maxWidth: '600px', margin: '0 auto 2rem auto' }}>
-            State-of-the-art pool covers, movable floors, and luxury pergolas tailored for architectural perfection.
-          </p>
-          <button style={{ backgroundColor: 'var(--accent-gold)', color: 'white', border: 'none', padding: '1rem 2.5rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px' }}>
-            Explore Collections
-          </button>
-        </div>
-      </section>
+
+<section className="relative h-[700px] overflow-hidden">
+  <Image
+    src="/hero.png"
+    alt="ApertoLux Luxury Outdoor Systems"
+    fill
+    priority
+    className="object-cover"
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/40" />
+
+  {/* Hero Content */}
+  <div className="absolute inset-0 flex items-center justify-center px-6">
+    <div className="z-10 flex flex-col items-center justify-center text-center text-white gap-8 max-w-4xl">
+      <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+        Redefine Your
+        <br />
+        Outdoor Experience
+      </h1>
+
+      <p className="text-xl md:text-2xl leading-relaxed max-w-2xl text-gray-200">
+        State-of-the-art pool covers, movable floors, and luxury pergolas
+        tailored for architectural perfection.
+      </p>
+
+      <Link
+        href="/products"
+        className="mt-4 inline-flex items-center rounded-md bg-[#C6A46A] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#b28f57] hover:scale-105"
+      >
+        Explore Collections
+      </Link>
+    </div>
+  </div>
+</section>
 
       <section className="container" style={{ marginTop: '5rem' }}>
         <div className="grid-3">

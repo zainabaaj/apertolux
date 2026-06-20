@@ -223,3 +223,7 @@ body {
   }
 }
 
+.feature-image-placeholder {
+  position: relative;
+  overflow: hidden;
+}
