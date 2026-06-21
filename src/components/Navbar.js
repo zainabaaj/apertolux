@@ -68,7 +68,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
+    <header className="sticky top-0 z-[999] border-b border-gray-200 bg-white shadow-sm">
       <nav className="mx-auto flex h-20 lg:h-24 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12 xl:px-16">
         
         {/* Logo */}
@@ -82,11 +82,11 @@ export default function Navbar() {
   />
 
   <div className="flex flex-col">
-    <span className="text-3xl font-bold tracking-[0.15em] text-[#0A192F]">
+   <span className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-[0.1em] text-[#0A192F]">
       APERTOLUX
     </span>
 
-    <span className="text-[11px] uppercase tracking-[0.25em] text-gray-500">
+   <span className="hidden sm:block text-[11px] uppercase tracking-[0.25em] text-gray-500">
       Premium Outdoor Living
     </span>
   </div>
@@ -178,19 +178,26 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu */}
-      
 {/* Mobile Menu */}
 <div
-  className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+  className={`fixed inset-x-0 top-20 z-40 bg-white transition-all duration-300 lg:hidden ${
     mobileMenuOpen
-      ? "max-h-[1000px] opacity-100"
-      : "max-h-0 opacity-0"
+      ? "translate-y-0 opacity-100"
+      : "-translate-y-4 pointer-events-none opacity-0"
   }`}
+  style={{
+    height: "calc(100vh - 80px)",
+    overflowY: "auto",
+    WebkitOverflowScrolling: "touch",
+  }}
 >
-  <div className="border-t border-gray-200 bg-white">
+  <div className="border-t border-gray-200 bg-white pb-10">
     <div className="px-5 py-4">
       {menuItems.map((item) => (
-        <div key={item.name} className="border-b border-gray-100 py-3">
+        <div
+          key={item.name}
+          className="border-b border-gray-100 py-3"
+        >
           <Link
             href={item.path}
             onClick={() => setMobileMenuOpen(false)}
