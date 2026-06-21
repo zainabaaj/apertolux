@@ -40,82 +40,394 @@ export default function ComfortHotTubsPage() {
     <div style={{ animation: 'fadeIn 0.5s ease-in' }}>
       
       {/* High-End Hero Section */}
-      <section className="relative h-[700px] overflow-hidden">
-        <Image
-          src="/hot-tubs/comfort/comfort-hero.png" 
-          alt="Apertolux Comfort Family Hot Tubs"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex items-center justify-center px-6">
-          <div className="z-10 text-center text-white max-w-4xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 drop-shadow-lg">Comfort Collection</h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
-              Family-first wellness. Ergonomic, safe, and accessible design for all ages.
-            </p>
-          </div>
-        </div>
+      <section className="relative min-h-[85vh] overflow-hidden">
+
+  <Image
+    src="/hot-tubs/comfort/comfort-hero.png"
+    alt="Comfort Collection"
+    fill
+    priority
+    className="object-cover"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20" />
+
+  <div className="relative z-10 mx-auto flex min-h-[85vh] max-w-[1700px] items-center px-6 lg:px-12">
+
+    <div className="max-w-4xl text-white">
+
+      <p className="mb-6 text-xs uppercase tracking-[0.45em] text-gray-300">
+        Comfort Collection
+      </p>
+
+      <h1 className="mb-8 text-5xl font-light leading-none md:text-7xl lg:text-8xl">
+        Designed For
+        <br />
+        Every Generation
+      </h1>
+
+      <p className="max-w-2xl text-lg leading-relaxed text-gray-200 md:text-xl">
+        Family-focused Nordic hot tubs combining accessibility,
+        safety, and timeless Scandinavian design for everyday wellness.
+      </p>
+
+    </div>
+
+  </div>
+
       </section>
+      {/* Family Wellness Section */}
+        <section className="py-24 lg:py-36">
 
-      <div className="container mx-auto px-6" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
-        
-        {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>Designed for Every Generation</h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            The Comfort range is developed to meet the needs of the whole family, regardless of age or physical condition. Featuring specially designed benches that double as cooling steps and child-friendly seating, these tubs ensure safety and ease of entry while providing luxurious back and arm support.
-          </p>
+        <div className="mx-auto grid max-w-[1700px] items-center gap-20 px-6 lg:grid-cols-2 lg:px-12">
+
+            <div className="overflow-hidden rounded-[36px]">
+
+            <Image
+                src="/hot-tubs/comfort/comfort-fam.png"
+                alt="Family Wellness"
+                width={900}
+                height={1100}
+                className="h-full w-full object-cover"
+            />
+
+            </div>
+
+            <div>
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                Family Wellness
+            </p>
+
+            <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-5xl lg:text-6xl">
+                Built Around Comfort,
+                Not Compromise
+            </h2>
+
+            <p className="mb-6 text-lg leading-relaxed text-gray-600">
+                The Comfort Collection has been engineered to provide
+                an exceptional bathing experience for every member of the family.
+            </p>
+
+            <p className="mb-6 text-lg leading-relaxed text-gray-600">
+                Integrated cooling benches, ergonomic seating, and safe entry points
+                make every hot tub welcoming and accessible while preserving the
+                premium craftsmanship expected from Nordic wellness products.
+            </p>
+
+            <p className="text-lg leading-relaxed text-gray-600">
+                Whether you&apos;re enjoying a peaceful evening with your partner or
+                entertaining friends and family, Comfort delivers effortless relaxation.
+            </p>
+
+            </div>
+
         </div>
 
-        {/* Gallery Section */}
-        <div className="bg-white p-8 rounded-lg mb-16 shadow-sm border border-gray-100">
-            <h3 style={{ fontSize: '2rem', color: 'var(--navy-primary)', marginBottom: '1rem', textAlign: 'center' }}>Comfort Models</h3>
-            <ProductGallery items={comfortModels} />
+        </section>
+      {/* Why Comfort Section */}
+        <section className="bg-[#F8F8F8] py-24 lg:py-32">
+
+        <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+            <div className="mb-20 text-center">
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                Why Comfort
+            </p>
+
+            <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl">
+                Designed Around Real Life
+            </h2>
+
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+            <div className="rounded-[32px] bg-white p-10">
+                <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+                Safe Entry & Exit
+                </h3>
+
+                <p className="leading-relaxed text-gray-600">
+                Integrated benches and carefully designed access points
+                improve safety and convenience for users of all ages.
+                </p>
+            </div>
+
+            <div className="rounded-[32px] bg-white p-10">
+                <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+                Ergonomic Seating
+                </h3>
+
+                <p className="leading-relaxed text-gray-600">
+                Specially designed seating supports the body naturally,
+                providing exceptional comfort during long bathing sessions.
+                </p>
+            </div>
+
+            <div className="rounded-[32px] bg-white p-10">
+                <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+                Easy Ownership
+                </h3>
+
+                <p className="leading-relaxed text-gray-600">
+                Durable materials and low-maintenance surfaces
+                ensure years of enjoyment with minimal upkeep.
+                </p>
+            </div>
+
+            </div>
+
         </div>
 
-        {/* Technical Specs Table */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>Comfort Collection Specifications</h2>
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '900px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Model</th>
-                  <th style={thStyle}>Capacity</th>
-                  <th style={thStyle}>Volume</th>
-                  <th style={thStyle}>Heating System</th>
-                  <th style={thStyle}>Exterior Finish</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyle}>Comfort Family M</td>
-                  <td style={tdStyle}>3-5 People</td>
-                  <td style={tdStyle}>1370 L</td>
-                  <td style={tdStyle}>MACU Stove (29 kW net)</td>
-                  <td style={tdStyle}>ThermoWood</td>
-                </tr>
-                <tr>
-                  <td style={tdStyle}>Comfort Family L</td>
-                  <td style={tdStyle}>6-8 People</td>
-                  <td style={tdStyle}>1930 L</td>
-                  <td style={tdStyle}>CUBE Stove (35 kW net)</td>
-                  <td style={tdStyle}>Finnish Spruce (Coal Tint)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyle}>Comfort Steady M</td>
-                  <td style={tdStyle}>4-6 People</td>
-                  <td style={tdStyle}>1420 L</td>
-                  <td style={tdStyle}>MACU Stove (29 kW net)</td>
-                  <td style={tdStyle}>Recycled Night Black Plastic</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        </section>
+    {/* Models */}
+        <section className="py-24 lg:py-36">
+
+        <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+            <div className="mb-20 text-center">
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                Available Models
+            </p>
+
+            <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl lg:text-6xl">
+                Choose Your Comfort
+            </h2>
+
+            </div>
+
+            <div className="space-y-32">
+
+            {/* Family M */}
+
+            <div className="grid items-center gap-16 lg:grid-cols-2">
+
+                <div className="overflow-hidden rounded-[36px]">
+                <Image
+                    src="/hot-tubs/comfort/comfort-family-m.png"
+                    alt="Comfort Family M"
+                    width={900}
+                    height={900}
+                    className="w-full object-contain"
+                />
+                </div>
+
+                <div>
+
+                <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                    Family Series
+                </p>
+
+                <h3 className="mb-6 text-4xl font-light text-[#0A192F]">
+                    Comfort Family M
+                </h3>
+
+                <p className="mb-8 text-lg leading-relaxed text-gray-600">
+                    Designed for families seeking everyday wellness,
+                    Family M combines ergonomic seating, integrated cooling benches,
+                    and effortless accessibility in a perfectly balanced size.
+                </p>
+
+                <div className="grid grid-cols-2 gap-8">
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Capacity
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        3–5 People
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Volume
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        1370 L
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Heating
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        MACU Heater
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Exterior
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        ThermoWood
+                    </p>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+            {/* Family L */}
+
+            <div className="grid items-center gap-16 lg:grid-cols-2">
+
+                <div className="order-2 lg:order-1">
+
+                <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                    Family Series
+                </p>
+
+                <h3 className="mb-6 text-4xl font-light text-[#0A192F]">
+                    Comfort Family L
+                </h3>
+
+                <p className="mb-8 text-lg leading-relaxed text-gray-600">
+                    Built for larger gatherings, Family L offers generous capacity,
+                    enhanced comfort, and exceptional performance for entertaining
+                    friends and family.
+                </p>
+
+                <div className="grid grid-cols-2 gap-8">
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Capacity
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        6–8 People
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Volume
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        1930 L
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Heating
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        CUBE Heater
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Exterior
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        Coal-Tinted Spruce
+                    </p>
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div className="order-1 overflow-hidden rounded-[36px] lg:order-2">
+                <Image
+                    src="/hot-tubs/comfort/comfort-family-l.png"
+                    alt="Comfort Family L"
+                    width={900}
+                    height={900}
+                    className="w-full object-contain"
+                />
+                </div>
+
+            </div>
+
+            {/* Steady M */}
+
+            <div className="grid items-center gap-16 lg:grid-cols-2">
+
+                <div className="overflow-hidden rounded-[36px]">
+                <Image
+                    src="/hot-tubs/comfort/comfort-steady-m.png"
+                    alt="Comfort Steady M"
+                    width={900}
+                    height={900}
+                    className="w-full object-contain"
+                />
+                </div>
+
+                <div>
+
+                <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                    Contemporary Series
+                </p>
+
+                <h3 className="mb-6 text-4xl font-light text-[#0A192F]">
+                    Comfort Steady M
+                </h3>
+
+                <p className="mb-8 text-lg leading-relaxed text-gray-600">
+                    Featuring a modern recycled composite exterior,
+                    Steady M combines contemporary aesthetics with
+                    exceptional practicality and low maintenance.
+                </p>
+
+                <div className="grid grid-cols-2 gap-8">
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Capacity
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        4–6 People
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Volume
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        1420 L
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Heating
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        MACU Heater
+                    </p>
+                    </div>
+
+                    <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-gray-500">
+                        Exterior
+                    </p>
+                    <p className="mt-2 text-xl text-[#0A192F]">
+                        Night Black Composite
+                    </p>
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
         </div>
-      </div>
+
+        </section>
     </div>
   );
 }
