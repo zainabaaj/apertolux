@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-
+import Image from 'next/image';
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,123 +53,262 @@ export default function Contact() {
     }
   };
 
-  return (
-    <div style={{ animation: 'fadeIn 0.5s ease-in' }}>
-      {/* High-End Hero Section */}
-      <div className="page-hero" style={{ minHeight: '40vh' }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Get in Touch</h1>
-        <p style={{ fontSize: '1.2rem', color: '#ccc', maxWidth: '700px' }}>
-          Begin your journey to a redefined outdoor space. Connect with our design specialists today.
+return (
+  <main className="bg-white">
+
+    {/* Hero */}
+    <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden">
+
+      <div className="absolute inset-0">
+        <Image
+          src="/projects/3/3.jpg"
+          alt="Luxury Outdoor Living"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/45" />
+      </div>
+
+      <div className="relative z-10 px-6 text-center text-white">
+        <p className="mb-6 text-xs uppercase tracking-[0.4em]">
+          Consultation & Planning
+        </p>
+
+        <h1 className="mb-8 text-5xl font-light md:text-6xl lg:text-8xl">
+          Let&apos;s Create
+          <br />
+          Something Extraordinary
+        </h1>
+
+        <p className="mx-auto max-w-3xl text-lg text-gray-200">
+          From private residences to landmark hospitality projects,
+          our specialists are ready to bring your vision to life.
         </p>
       </div>
 
-      <div className="container contact-grid">
-        {/* Left Column: Contact Details */}
-        <div>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            Let&apos;s build something extraordinary.
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '3rem', lineHeight: '1.8' }}>
-            Whether you are an architect detailing a new build, or a homeowner looking to elevate your current property, our engineering and design team is ready to assist you with bespoke solutions.
-          </p>
+    </section>
 
-          <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.2rem', color: 'var(--navy-primary)', marginBottom: '0.5rem' }}>Main Office OpenAlum</h3>
-            <p style={{ color: 'var(--text-muted)' }}>
-              
-              Nazareth, 2004 st. Zip code: 16955
+    {/* Featured Image */}
+    <section className="py-24 lg:py-32">
+      <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+        <Image
+          src="/proj1.png"
+          alt="Apertolux Project"
+          width={2200}
+          height={1400}
+          className="h-[350px] w-full rounded-[32px] object-cover md:h-[500px] lg:h-[750px]"
+        />
+
+      </div>
+    </section>
+
+    {/* Consultation */}
+    <section className="pb-24 lg:pb-36">
+      <div className="mx-auto max-w-[1600px] px-6 lg:px-12">
+
+        <div className="grid gap-20 lg:grid-cols-[0.8fr_1.2fr]">
+
+          {/* Left */}
+          <div>
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+              Direct Contact
             </p>
-          </div>
 
-          <div style={{ marginBottom: '2rem' }}>
-            <h3 style={{ fontSize: '1.2rem', color: 'var(--navy-primary)', marginBottom: '0.5rem' }}>Direct Contact</h3>
-            <p style={{ color: 'var(--text-muted)' }}>
-              Phone: +972 52-839-9655<br />
-              Email: info@apertolux.com
+            <h2 className="mb-8 text-4xl font-light text-[#0A192F] lg:text-6xl">
+              Start Your Project
+            </h2>
+
+            <p className="mb-12 text-lg leading-relaxed text-gray-600">
+              Whether you are planning a luxury residence,
+              wellness destination, hospitality development,
+              or bespoke architectural feature, our team
+              is ready to assist.
             </p>
-          </div>
-        </div>
 
-        {/* Right Column: The Inquiry Form */}
-        <div style={{ backgroundColor: 'white', padding: '3rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)' }}>
-          {isSubmitted ? (
-            <div style={{ textAlign: 'center', padding: '3rem 0' }}>
-              <h2 style={{ color: 'var(--navy-primary)', marginBottom: '1rem' }}>Thank You</h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>
-                Your inquiry has been received. One of our design specialists will contact you shortly.
-              </p>
-              <button 
-                onClick={() => setIsSubmitted(false)}
-                className="btn-outline" 
-                style={{ marginTop: '2rem' }}
-              >
-                Send Another Message
-              </button>
+            <div className="space-y-8">
+
+              <div>
+                <h3 className="mb-2 text-lg font-medium text-[#0A192F]">
+                  Email
+                </h3>
+                <p className="text-gray-600">
+                  info@apertolux.com
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-medium text-[#0A192F]">
+                  Phone
+                </h3>
+                <p className="text-gray-600">
+                  +972 52-839-9655
+                </p>
+              </div>
+
+              <div>
+                <h3 className="mb-2 text-lg font-medium text-[#0A192F]">
+                  Location
+                </h3>
+                <p className="text-gray-600">
+                  Nazareth, Israel
+                </p>
+              </div>
+
             </div>
-          ) : (
-            <form onSubmit={handleSubmit}>
-              <h3 style={{ fontSize: '1.8rem', color: 'var(--navy-primary)', marginBottom: '2rem' }}>Request a Consultation</h3>
-              
-              {errorMessage && (
-                <div style={{ backgroundColor: '#fee2e2', color: '#991b1b', padding: '1rem', borderRadius: '4px', marginBottom: '1.5rem' }}>
-                  {errorMessage}
-                </div>
-              )}
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="firstName">First Name</label>
-                  <input type="text" id="firstName" name="firstName" className="form-input" required disabled={isSubmitting} />
-                </div>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="lastName">Last Name</label>
-                  <input type="text" id="lastName" name="lastName" className="form-input" required disabled={isSubmitting} />
-                </div>
+          </div>
+
+          {/* Form */}
+          <div>
+
+            {isSubmitted ? (
+              <div className="py-20">
+
+                <h3 className="mb-6 text-4xl font-light text-[#0A192F]">
+                  Thank You
+                </h3>
+
+                <p className="max-w-xl text-lg text-gray-600">
+                  Your inquiry has been received.
+                  One of our specialists will contact
+                  you shortly.
+                </p>
+
+                <button
+                  onClick={() => setIsSubmitted(false)}
+                  className="mt-10 rounded-full border border-[#0A192F] px-8 py-4 text-[#0A192F] transition hover:bg-[#0A192F] hover:text-white"
+                >
+                  Send Another Inquiry
+                </button>
+
               </div>
+            ) : (
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-8"
+              >
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="email">Email Address</label>
-                  <input type="email" id="email" name="email" className="form-input" required disabled={isSubmitting} />
+                {errorMessage && (
+                  <div className="rounded-xl bg-red-50 p-4 text-red-700">
+                    {errorMessage}
+                  </div>
+                )}
+
+                <div className="grid gap-6 md:grid-cols-2">
+
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                    disabled={isSubmitting}
+                    className="border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                  />
+
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                    disabled={isSubmitting}
+                    className="border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                  />
+
                 </div>
-                <div className="form-group">
-                  <label className="form-label" htmlFor="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" className="form-input" disabled={isSubmitting} />
+
+                <div className="grid gap-6 md:grid-cols-2">
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    disabled={isSubmitting}
+                    className="border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    disabled={isSubmitting}
+                    className="border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                  />
+
                 </div>
-              </div>
 
-              <div className="form-group">
-                <label className="form-label" htmlFor="interest">Primary Interest</label>
-                <select id="interest" name="interest" className="form-select" required disabled={isSubmitting}>
-                  <option value="">Select a Solution...</option>
-                  <option value="Movable Pool Floor">Movable Pool Floor</option>
-                  <option value="Automated Pool Cover">Automated Pool Cover</option>
-                  <option value="Bioclimatic Pergola">Bioclimatic Pergola</option>
-                  <option value="Zip Screens / Shutters">Zip Screens / Shutters</option>
-                  <option value="Multiple Solutions">Multiple Solutions</option>
-                </select>
-              </div>
-
-              <div className="form-group">
-                <label className="form-label" htmlFor="message">Project Details</label>
-                <textarea 
-                  id="message" 
-                  name="message"
-                  className="form-textarea" 
-                  rows="5" 
-                  placeholder="Tell us a bit about your timeline, location, and vision..."
+                <select
+                  name="interest"
                   required
                   disabled={isSubmitting}
-                ></textarea>
-              </div>
+                  className="w-full border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                >
+                  <option value="">
+                    Select a Solution
+                  </option>
+                  <option value="Movable Pool Floor">
+                    Movable Pool Floor
+                  </option>
+                  <option value="Automated Pool Cover">
+                    Automated Pool Cover
+                  </option>
+                  <option value="Bioclimatic Pergola">
+                    Bioclimatic Pergola
+                  </option>
+                  <option value="Zip Screens / Shutters">
+                    Zip Screens / Shutters
+                  </option>
+                  <option value="Multiple Solutions">
+                    Multiple Solutions
+                  </option>
+                </select>
 
-              <button type="submit" className="btn-primary" disabled={isSubmitting} style={{ opacity: isSubmitting ? 0.7 : 1 }}>
-                {isSubmitting ? 'Sending...' : 'Send Inquiry'}
-              </button>
-            </form>
-          )}
+                <textarea
+                  name="message"
+                  required
+                  disabled={isSubmitting}
+                  rows={6}
+                  placeholder="Tell us about your project..."
+                  className="w-full border-b border-gray-300 py-4 outline-none focus:border-[#0A192F]"
+                />
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="rounded-full bg-[#0A192F] px-10 py-4 text-white transition hover:bg-[#172A45]"
+                >
+                  {isSubmitting
+                    ? "Sending..."
+                    : "Send Inquiry"}
+                </button>
+
+              </form>
+            )}
+
+          </div>
+
         </div>
+
       </div>
-    </div>
-  );
+    </section>
+
+    {/* Closing Statement */}
+    <section className="bg-[#081321] py-32 text-center text-white">
+
+      <p className="mb-6 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Since 2006
+      </p>
+
+      <h2 className="mx-auto max-w-5xl px-6 text-4xl font-light md:text-5xl lg:text-7xl">
+        Engineering Exceptional
+        Outdoor Spaces
+      </h2>
+
+    </section>
+
+  </main>
+);
 }
