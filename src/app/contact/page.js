@@ -261,6 +261,9 @@ return (
                   <option value="Zip Screens / Shutters">
                     Zip Screens / Shutters
                   </option>
+                   <option value="Hot Tubs & Spas">
+                    Hot Tubs & Spas
+                  </option>
                   <option value="Multiple Solutions">
                     Multiple Solutions
                   </option>
