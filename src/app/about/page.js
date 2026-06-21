@@ -439,11 +439,11 @@ export default function AboutUs() {
       </p>
 
       <h2 className="mx-auto mb-8 max-w-4xl text-4xl font-light md:text-5xl lg:text-6xl">
-        Let's Create Something Extraordinary
+        Let&apos;s Create Something Extraordinary
       </h2>
 
       <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-300">
-        Whether it's a private residence, luxury hospitality project,
+        Whether it&apos;s a private residence, luxury hospitality project,
         or bespoke architectural concept, our team is ready to bring
         your vision to life.
       </p>
