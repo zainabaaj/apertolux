@@ -64,70 +64,108 @@ export default function CollectionsPage() {
         </div>
       </section>
 
-      {/* Collections Grid */}
-      <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold text-[#0A192F]">
-            Explore Collections
-          </h2>
+<section className="py-24 lg:py-36">
+  <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
 
-          <p className="mt-4 text-lg text-gray-600">
-            Designed for modern architecture and outdoor living.
-          </p>
-        </div>
+    <div className="mb-24 text-center">
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Collections
+      </p>
 
-        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
-          {collections.map((item) => (
-            <a
-              key={item.title}
-              href={item.href}
-              className="group overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
-            >
-              <div className="h-72 overflow-hidden">
-                <Image
-                width={400}
-                height={300}
-                  src={item.image}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-                />
-              </div>
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl lg:text-6xl">
+        Explore Our Collections
+      </h2>
+    </div>
 
-              <div className="p-8">
-                <h3 className="mb-3 text-2xl font-semibold text-[#0A192F]">
-                  {item.title}
-                </h3>
+    <div className="space-y-32">
 
-                <p className="mb-6 text-gray-600">
-                  {item.description}
-                </p>
-
-                <span className="font-medium text-[#0A192F]">
-                  View Collection →
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-[#0A192F] py-24 text-center text-white">
-        <h2 className="mb-6 text-4xl font-bold">
-          Looking for a Custom Solution?
-        </h2>
-
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-300">
-          Our team can help you design the perfect outdoor living space.
-        </p>
-
-        <a
-          href="/contact"
-          className="rounded-full bg-white px-8 py-4 font-semibold text-[#0A192F] transition hover:bg-gray-100"
+      {collections.map((item, index) => (
+        <Link
+          key={item.title}
+          href={item.href}
+          className="group block"
         >
-          Request a Consultation
-        </a>
-      </section>
+          <div
+            className={`grid items-center gap-12 lg:gap-24 ${
+              index % 2 === 0
+                ? "lg:grid-cols-2"
+                : "lg:grid-cols-2"
+            }`}
+          >
+
+            <div
+              className={`overflow-hidden rounded-[32px] ${
+                index % 2 !== 0 ? "lg:order-2" : ""
+              }`}
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={1400}
+                height={1000}
+                className="h-[350px] w-full object-cover transition duration-700 group-hover:scale-105 md:h-[500px] lg:h-[700px]"
+              />
+            </div>
+
+            <div
+              className={`max-w-xl ${
+                index % 2 !== 0 ? "lg:order-1" : ""
+              }`}
+            >
+              <p className="mb-4 text-xs uppercase tracking-[0.35em] text-gray-500">
+                Collection
+              </p>
+
+              <h3 className="mb-8 text-4xl font-light text-[#0A192F] lg:text-6xl">
+                {item.title}
+              </h3>
+
+              <p className="mb-10 text-lg leading-relaxed text-gray-600">
+                {item.description}
+              </p>
+
+              <span className="text-lg text-[#0A192F]">
+                Explore Collection →
+              </span>
+            </div>
+
+          </div>
+        </Link>
+      ))}
+
+    </div>
+  </div>
+</section>
+      {/* CTA */}
+<section className="pb-32">
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="overflow-hidden rounded-[40px] bg-[#0A192F] px-8 py-20 text-center text-white md:px-16 md:py-28">
+
+      <p className="mb-6 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Custom Solutions
+      </p>
+
+      <h2 className="mx-auto mb-8 max-w-4xl text-4xl font-light md:text-5xl lg:text-6xl">
+        Let&apos;s Create Something Extraordinary
+      </h2>
+
+      <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-300">
+        Every project is unique. Our team works closely with homeowners,
+        architects, and developers to deliver tailored outdoor solutions.
+      </p>
+
+      <Link
+        href="/contact"
+        className="inline-flex rounded-full bg-white px-10 py-4 text-[#0A192F] transition hover:scale-105"
+      >
+        Request a Consultation
+      </Link>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
