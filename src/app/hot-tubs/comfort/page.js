@@ -30,11 +30,43 @@ const ProductGallery = ({ items }) => (
 );
 
 export default function ComfortHotTubsPage() {
-  const comfortModels = [
-    { name: "Family M", image: "/hot-tubs/comfort/comfort-family-m.png" },
-    { name: "Family L", image: "/hot-tubs/comfort/comfort-family-l.png" },
-    { name: "Steady M", image: "/hot-tubs/comfort/comfort-steady-m.png" },
-  ];
+const comfortModels = [
+  {
+    name: "Comfort Family M",
+    image: "/hot-tubs/comfort/comfort-family-m.png",
+    description:
+      "Family-focused hot tub with integrated cooling bench, easy access, and enhanced safety for all ages.",
+    capacity: "3–5 People",
+    volume: "1370 L",
+    diameter: "170 cm",
+    heater: "MACU",
+    weight: "130 kg",
+  },
+
+  {
+    name: "Comfort Family L",
+    image: "/hot-tubs/comfort/comfort-family-l.png",
+    description:
+      "Large-capacity family model designed for bigger groups with ergonomic seating and exceptional accessibility.",
+    capacity: "6–8 People",
+    volume: "1930 L",
+    diameter: "200 cm",
+    heater: "CUBE",
+    weight: "180 kg",
+  },
+
+  {
+    name: "Comfort Steady M",
+    image: "/hot-tubs/comfort/comfort-steady-m.png",
+    description:
+      "Modern low-maintenance design with integrated bench seating and recycled composite exterior panels.",
+    capacity: "4–6 People",
+    volume: "1420 L",
+    diameter: "170 cm",
+    heater: "MACU",
+    weight: "157 kg",
+  },
+];
 
   return (
     <div style={{ animation: 'fadeIn 0.5s ease-in' }}>
@@ -429,14 +461,40 @@ export default function ComfortHotTubsPage() {
 
         </section>
 
+        {/* Compare Models */}
+        <section className="bg-[#F8F8F8] py-24 lg:py-32">
 
+        <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+            <div className="mb-16 text-center">
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                Compare Models
+            </p>
+
+            <h2 className="mb-6 text-4xl font-light text-[#0A192F] md:text-5xl">
+                Find Your Perfect Fit
+            </h2>
+
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+                Compare key specifications across our most popular Original Collection models.
+            </p>
+
+            </div>
+
+            
+
+        </div>
+
+        </section>
+        <ModelComparison models={comfortModels} />
         {/* CTA */}
         <section className="bg-[#0A192F] py-28 text-white">
 
         <div className="mx-auto max-w-5xl px-6 text-center">
 
             <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
-            Original Collection
+            Comfort Collection
             </p>
 
             <h2 className="mb-8 text-4xl font-light md:text-6xl">
@@ -463,6 +521,3 @@ export default function ComfortHotTubsPage() {
   );
 }
 
-const thStyle = { backgroundColor: 'var(--navy-primary)', color: 'white', padding: '1.2rem', fontWeight: '600' };
-const tdStyle = { padding: '1.2rem', borderBottom: '1px solid #eaeaea', color: 'var(--text-muted)' };
-const rowStripeStyle = { backgroundColor: '#f9fbfd' };
