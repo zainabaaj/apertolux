@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Assuming you are using your standard slider component
-import PoolSlider from "@/components/PoolSlider"; 
-import "swiper/css";
-import "swiper/css/navigation";
 
 export const metadata = {
   title: 'Smart Retractable Carports | Apertolux',
@@ -42,219 +38,514 @@ export default function SmartCarportPage() {
         </div>
       </section>
 
-      <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
         
         {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            The Evolution of the Garage
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            Transform a purely functional necessity into a premium architectural feature. Our smart carports utilize an innovative telescopic design, offering the absolute security and weather protection of a closed garage without permanently consuming your driveway or yard space. 
-          </p>
-        </div>
+        <section className="relative z-10 -mt-20 px-6">
 
-        {/* Feature 1: Frame and Glazing */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Heavy-Duty Architecture</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              The structural skeleton is constructed entirely from heavy-duty, powder-coated aluminum, ensuring a lightweight glide while remaining entirely rust-proof and capable of bearing heavy snow and wind loads.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              For the canopy, we replace standard fragile glass with impact-resistant solid polycarbonate or tempered safety glass. This provides a glass-like luxury aesthetic while delivering extreme durability against hail, debris, and harmful UV rays.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Anti-Corrosion: 100% rust-proof aluminum framework</li>
-              <li style={listItemStyle}>✓ Impact Resistant: Protects luxury vehicles from hail and falling debris</li>
-              <li style={listItemStyle}>✓ UV Block: Tinted or clear panels protect your car&apos;s paint and interior</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-            <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/carport/2.png" // Update with your actual image path
-                alt="Impact Resistant Polycarbonate Glazing"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
+            <div className="mx-auto max-w-7xl rounded-[32px] bg-white p-8 md:p-12 lg:p-16 shadow-xl">
+
+                <div className="text-center">
+
+                <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+                    Architectural Vehicle Protection
+                </p>
+
+                <h2 className="text-4xl md:text-5xl font-light text-[#0A192F]">
+                    The Evolution Of The Garage
+                </h2>
+
+                <p className="mx-auto mt-8 max-w-3xl text-lg text-gray-600 leading-relaxed">
+                    Combining advanced telescopic engineering with luxury
+                    architectural design, Apertolux Smart Carports provide
+                    complete protection while preserving the elegance of
+                    your outdoor space.
+                </p>
+
+                </div>
+
             </div>
-          </div>
+
+            </section>
+
+
+{/* Feature 1 */}
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+<div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+  <Image
+    src="/pergolas/carport/1.png"
+    alt="Heavy Duty Architecture"
+    fill
+    className="object-cover"
+  />
+
+</div>
+
+<div>
+
+  <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+    Engineering
+  </p>
+
+  <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+    Heavy-Duty Architecture
+  </h2>
+
+  <p className="mb-6 text-lg leading-relaxed text-gray-600">
+    Built entirely from architectural-grade powder-coated aluminum,
+    the structure delivers exceptional durability while remaining
+    lightweight, corrosion-resistant, and visually refined.
+  </p>
+
+  <p className="mb-8 text-lg leading-relaxed text-gray-600">
+    The canopy can be configured with impact-resistant solid
+    polycarbonate or tempered safety glass, providing premium
+    aesthetics together with long-term protection against harsh
+    weather conditions.
+  </p>
+
+  <div className="space-y-4">
+
+    <div className="rounded-xl border border-gray-200 p-4">
+      Marine-grade aluminum construction
+    </div>
+
+    <div className="rounded-xl border border-gray-200 p-4">
+      Hail, debris and UV protection
+    </div>
+
+    <div className="rounded-xl border border-gray-200 p-4">
+      Engineered for wind and snow loads
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+{/* Feature 2 */}
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+<div>
+
+  <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+    Innovation
+  </p>
+
+  <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+    Telescopic Glide Technology
+  </h2>
+
+  <p className="mb-6 text-lg leading-relaxed text-gray-600">
+    Precision-engineered modules nest seamlessly inside one
+    another, allowing the structure to retract to a fraction
+    of its total footprint.
+  </p>
+
+  <p className="mb-8 text-lg leading-relaxed text-gray-600">
+    When closed, your vehicles are completely protected.
+    When open, the structure virtually disappears, restoring
+    the openness of your outdoor environment.
+  </p>
+
+  <div className="space-y-4">
+
+    <div className="rounded-xl bg-white p-4">
+      Space-saving telescopic design
+    </div>
+
+    <div className="rounded-xl bg-white p-4">
+      Precision nylon & stainless-steel rollers
+    </div>
+
+    <div className="rounded-xl bg-white p-4">
+      Smooth and silent operation
+    </div>
+
+  </div>
+
+</div>
+
+<div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+  <Image
+    src="/pergolas/carport/2.png"
+    alt="Telescopic System"
+    fill
+    className="object-cover"
+  />
+
+</div>
+
+  </div>
+
+</section>
+{/* Smart Automation */}
+      <section className="py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+    <div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+      <Image
+        src="/pergolas/carport/3.png"
+        alt="Smart Automation"
+        fill
+        className="object-cover"
+      />
+
+    </div>
+
+    <div>
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Automation
+      </p>
+
+      <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+        Intelligent Operation
+      </h2>
+
+      <p className="mb-6 text-lg leading-relaxed text-gray-600">
+        Luxury should feel effortless. Larger systems can be equipped
+        with fully motorized operation, allowing the structure to
+        open and close at the touch of a button.
+      </p>
+
+      <p className="mb-8 text-lg leading-relaxed text-gray-600">
+        Remote controls, smartphone integration, and future-ready
+        smart home connectivity ensure a seamless ownership
+        experience.
+      </p>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+
+        <div className="rounded-2xl border border-gray-200 p-5">
+          Remote Control Access
         </div>
 
-        {/* Feature 2: Telescopic Mechanism */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem', flexDirection: 'row-reverse' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Telescopic Glide System</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Operating on a low-profile track system integrated directly into your paving, the individual structural modules are precisely scaled to nest seamlessly inside one another—just like a telescope.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Smaller setups can be effortlessly glided open by hand via precision nylon and stainless steel rollers. For larger, premium installations, the entire structure is fully motorized and can be commanded to open or close via remote control or a dedicated smartphone app.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Space Optimization: Retracts to a fraction of its total length</li>
-              <li style={listItemStyle}>✓ Smart Drive: Remote and smartphone app motorization available</li>
-              <li style={listItemStyle}>✓ Seamless Tracks: Ultra-low profile floor guides</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-             <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/carport/3.png" // Update with your actual image path
-                alt="Telescopic Nesting Mechanism"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+        <div className="rounded-2xl border border-gray-200 p-5">
+          Smartphone Integration
         </div>
 
-   
-       
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>Technical Specifications</h2>
-          
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '800px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Specification</th>
-                  <th style={thStyle}>Apertolux Telescopic System</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyleLeft}>Frame Engineering</td>
-                  <td style={tdStyle}>Heavy-duty, rust-proof extruded architectural aluminum</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Canopy Glazing</td>
-                  <td style={tdStyle}>Impact-resistant solid polycarbonate or tempered safety glass (Clear or Tinted)</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Protection Profile</td>
-                  <td style={tdStyle}>100% UV Protection, Hail & Debris resistant, Snow load capable</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Retraction Mechanism</td>
-                  <td style={tdStyle}>Descending modular telescopic nesting system</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Track System</td>
-                  <td style={tdStyle}>Low-profile floor tracks integrated into paving or concrete</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Roller Hardware</td>
-                  <td style={tdStyle}>High-tensile nylon or stainless steel precision rollers for silent glide</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Operation Mode</td>
-                  <td style={tdStyle}>Manual Glide (Standard) or Motorized Smart-Drive (Optional)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Smart Motorization</td>
-                  <td style={tdStyle}>Remote control and smartphone app integration available on motorized units</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Versatile Scaling</td>
-                  <td style={tdStyle}>Can be custom-scaled to enclose hot tubs, swimming pools, or outdoor dining patios</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <button style={{ backgroundColor: 'var(--navy-primary)', color: 'white', border: 'none', padding: '1rem 3rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px', fontWeight: 'bold' }}>
-                Request a Custom Quote
-              </button>
-            </Link>
-          </div>
+        <div className="rounded-2xl border border-gray-200 p-5">
+          Quiet Motorized Movement
+        </div>
+
+        <div className="rounded-2xl border border-gray-200 p-5">
+          Future Smart Home Ready
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* why carport Section */}
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Why Choose Apertolux
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        More Than Vehicle Protection
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Protect Luxury Vehicles",
+          text: "Shield valuable vehicles from weather, debris, and UV exposure."
+        },
+
+        {
+          title: "Preserve Open Space",
+          text: "Retracts when not needed, maintaining clean architectural lines."
+        },
+
+        {
+          title: "Increase Property Value",
+          text: "Adds a sophisticated and highly functional architectural feature."
+        },
+
+        {
+          title: "Designed To Impress",
+          text: "Transforms a practical necessity into a statement piece."
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8"
+        >
+
+          <h3 className="mb-4 text-xl text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+{/* protection Section */}
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Protection
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Designed To Defend
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        "UV Radiation",
+        "Rain & Snow",
+        "Hail Damage",
+        "Tree Debris",
+        "Dust & Sand",
+        "Bird Droppings",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-[28px] border border-gray-200 p-8 text-center"
+        >
+
+          <h3 className="text-xl font-light text-[#0A192F]">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+{/* Applications Section */}
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Custom Configuration
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored To Your Property
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2">
+
+      <div className="rounded-[32px] bg-white p-10">
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Structure
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Custom Widths</li>
+          <li>• Custom Lengths</li>
+          <li>• Single or Multi Vehicle</li>
+          <li>• Architectural Color Matching</li>
+        </ul>
+      </div>
+
+      <div className="rounded-[32px] bg-white p-10">
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Canopy Options
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Clear Polycarbonate</li>
+          <li>• Tinted Polycarbonate</li>
+          <li>• Tempered Glass</li>
+          <li>• UV Filtering Panels</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Technical Specifications
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Engineered Performance
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
+        Every component is selected to deliver exceptional durability,
+        smooth operation, and long-term reliability.
+      </p>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        {
+          title: "Frame Material",
+          value: "Architectural Aluminum",
+        },
+
+        {
+          title: "Roof Options",
+          value: "Polycarbonate or Tempered Glass",
+        },
+
+        {
+          title: "Operation",
+          value: "Manual or Motorized",
+        },
+
+        {
+          title: "Protection",
+          value: "UV, Hail, Rain & Snow",
+        },
+
+        {
+          title: "Track System",
+          value: "Low Profile Integrated Rails",
+        },
+
+        {
+          title: "Automation",
+          value: "Remote & Smartphone Control",
+        },
+
+        {
+          title: "Roller System",
+          value: "Precision Nylon & Stainless Steel",
+        },
+
+        {
+          title: "Customization",
+          value: "Fully Bespoke Dimensions",
+        },
+
+        {
+          title: "Applications",
+          value: "Vehicles, Pools, Patios & Spas",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-gray-200 bg-white p-8 transition duration-300 hover:shadow-xl"
+        >
+
+          <div className="mb-3 text-sm uppercase tracking-widest text-gray-500">
+            {item.title}
+          </div>
+
+          <div className="text-xl font-light text-[#0A192F]">
+            {item.value}
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+      Start Your Project
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-white md:text-6xl">
+      Protect What Moves You
+    </h2>
+
+    <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300">
+      Every Apertolux Smart Carport is custom engineered around
+      your vehicle, architecture, and lifestyle. Create a solution
+      that delivers protection without compromising design.
+    </p>
+
+    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
+      <Link
+        href="/contact"
+        className="rounded-full bg-white px-10 py-4 text-[#0A192F] transition hover:bg-gray-100"
+      >
+        Request Consultation
+      </Link>
+
+      <Link
+        href="/collections"
+        className="rounded-full border border-white px-10 py-4 text-white transition hover:bg-white hover:text-[#0A192F]"
+      >
+        Explore Collections
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
     </div>
   );
 }
 
-// ==========================================
-// REUSABLE INLINE STYLES
-// ==========================================
-
-const flexRowStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
-};
-
-const flexHalfStyle = {
-  flex: '1 1 400px',
-};
-
-const configHeaderStyle = {
-  fontSize: '2.2rem',
-  color: 'var(--navy-primary)',
-  marginBottom: '1.5rem',
-  fontWeight: '700'
-};
-
-const listItemStyle = {
-  marginBottom: '1rem', 
-  color: 'var(--navy-light)', 
-  fontSize: '1.1rem',
-  fontWeight: '500',
-  display: 'flex',
-  alignItems: 'center'
-};
-
-// Table Styles
-const thStyle = {
-  backgroundColor: 'var(--navy-primary)',
-  color: 'white',
-  padding: '1.2rem',
-  fontWeight: '600',
-  borderBottom: '2px solid #0A192F',
-  borderRight: '1px solid rgba(255,255,255,0.1)'
-};
-
-const tdStyleLeft = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--navy-primary)',
-  fontWeight: '600',
-  width: '30%'
-};
-
-const tdStyle = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--text-muted)',
-  lineHeight: '1.5'
-};
-
-const rowStripeStyle = {
-  backgroundColor: '#f9fbfd'
-};

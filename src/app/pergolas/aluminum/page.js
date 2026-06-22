@@ -41,219 +41,507 @@ export default function FixedAndRetractablePage() {
           </div>
         </div>
       </section>
+<section className="relative -mt-20 z-10 px-6">
+  <div className="mx-auto max-w-7xl rounded-[32px] border border-gray-200 bg-white p-8 md:p-12 lg:p-16">
 
-      <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
-        
-        {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            Two Philosophies. One Standard of Luxury.
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            Whether you desire the dynamic flexibility of a motorized bioclimatic roof that adapts to the weather in real-time, or the heavy-duty reassurance of a permanent, fixed-roof structure designed for year-round shelter, Apertolux delivers uncompromising marine-grade engineering. 
+    <div className="text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Architectural Pergola Systems
+      </p>
+
+      <h2 className="mx-auto max-w-4xl text-4xl font-light text-[#0A192F] md:text-5xl">
+        Fixed & Retractable Aluminum Pergolas
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-600">
+        Engineered for luxury residences, hospitality projects,
+        rooftop terraces, and commercial environments. Choose between
+        permanent architectural shelter or dynamic climate-responsive
+        retractable systems.
+      </p>
+
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        "Marine-Grade Aluminum",
+        "Motorized Automation",
+        "Hidden Drainage System",
+        "Custom Built Solutions",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-2xl border border-gray-200 p-6 text-center"
+        >
+          <p className="font-medium text-[#0A192F]">
+            {item}
           </p>
         </div>
+      ))}
 
-        {/* Feature 1: Retractable System */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Dynamic Retractable Systems</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Experience total freedom over your environment. Our retractable and bioclimatic pergolas feature motorized aluminum louvers that rotate to precisely control sunlight and natural ventilation, or fold away completely to reveal the open sky.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Fully Retractable: Fold the roof back for a completely open view</li>
-              <li style={listItemStyle}>✓ Micro-Climate Control: Angled louvers create refreshing natural drafts</li>
-              <li style={listItemStyle}>✓ Smart Automation: Integrated rain and wind sensors for auto-closure</li>
-            </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section className="bg-gray-50 py-24">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-16 text-center">
+
+      <h2 className="text-4xl font-light text-[#0A192F]">
+        Feature Comparison
+      </h2>
+
+    </div>
+
+    <div className="space-y-5">
+
+      {[
+        ["Weather Protection", "Permanent", "Adaptive"],
+        ["Sun Control", "Limited", "Fully Adjustable"],
+        ["Ventilation", "Passive", "Active"],
+        ["Automation", "Optional", "Standard"],
+        ["Maintenance", "Minimal", "Low"],
+        ["Open Sky Experience", "No", "Yes"],
+      ].map(([feature, fixed, retractable]) => (
+        <div
+          key={feature}
+          className="grid grid-cols-3 rounded-2xl border border-gray-200 bg-white p-6"
+        >
+          <div className="font-medium text-[#0A192F]">
+            {feature}
           </div>
-          <div style={flexHalfStyle}>
-            <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/aluminum/2.png" // Update with your actual image path
-                alt="Retractable Bioclimatic Pergola"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
+
+          <div className="text-center text-gray-600">
+            {fixed}
+          </div>
+
+          <div className="text-center font-medium text-[#0A192F]">
+            {retractable}
           </div>
         </div>
+      ))}
 
-        {/* Feature 2: Fixed System */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem', flexDirection: 'row-reverse' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Permanent Fixed Structures</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Designed for absolute permanence. Our fixed pergolas provide a steadfast architectural extension to your home. Choose from insulated sandwich panels for total thermal block, static angled louvers, or tempered safety glass to let the light in while keeping the rain out.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Built to withstand extreme snow loads and hurricane-force winds, fixed structures offer the ultimate peace of mind for heavy-duty, year-round outdoor kitchens and living rooms.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Extreme Durability: Engineered for maximum snow and wind loads</li>
-              <li style={listItemStyle}>✓ Roof Variations: Glass, insulated aluminum, or fixed louvers</li>
-              <li style={listItemStyle}>✓ Zero Maintenance: No moving parts means decades of static reliability</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-             <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/aluminum/3.png" // Update with your actual image path
-                alt="Permanent Fixed Pergola"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Engineering Excellence
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        Built For Every Season
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-300">
+        Every Apertolux pergola is engineered to deliver
+        exceptional performance, durability, and comfort
+        in demanding environments.
+      </p>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Hidden Drainage",
+          text: "Integrated drainage channels direct rainwater discreetly through the structure."
+        },
+
+        {
+          title: "Premium Powder Coating",
+          text: "Architectural-grade finishes provide exceptional resistance to corrosion and fading."
+        },
+
+        {
+          title: "Smart Sensors",
+          text: "Automatic weather sensors respond instantly to wind, rain and changing conditions."
+        },
+
+        {
+          title: "Integrated Lighting",
+          text: "Ambient LED solutions create sophisticated outdoor environments day and night."
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
+        >
+
+          <h3 className="mb-4 text-xl font-medium text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
         </div>
 
-     
+      ))}
 
-     
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>System Comparison</h2>
-          
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '800px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Feature</th>
-                  <th style={thStyle}>Smart Retractable (Bioclimatic)</th>
-                  <th style={thStyle}>Fixed Structure (Solid / Glass)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyleLeft}>Roof Functionality</td>
-                  <td style={tdStyle}>Motorized rotation (0°-135°) & full sliding retraction</td>
-                  <td style={tdStyle}>Static. Permanent solid panels, glass, or fixed louvers</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Weather Response</td>
-                  <td style={tdStyle}>Dynamic. Auto-closes during rain via integrated sensors</td>
-                  <td style={tdStyle}>Permanent. 100% weatherproof 24/7 without intervention</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Ventilation</td>
-                  <td style={tdStyle}>Active. Tilting louvers create natural chimney-effect drafts</td>
-                  <td style={tdStyle}>Passive. Relies on open sides or integrated zip screens</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Snow Load Capacity</td>
-                  <td style={tdStyle}>Moderate to High (up to 120 kg/㎡). Requires opening in heavy freezes</td>
-                  <td style={tdStyle}>Extreme (up to 250+ kg/㎡). Designed for heavy winter accumulation</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Maintenance</td>
-                  <td style={tdStyle}>Annual motor and track inspection recommended</td>
-                  <td style={tdStyle}>Zero mechanical maintenance (No moving parts)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Drainage System</td>
-                  <td style={tdStyle}>Integrated hidden gutters inside structural posts</td>
-                  <td style={tdStyle}>Integrated hidden gutters inside structural posts</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Customization</td>
-                  <td style={tdStyle}>LED lighting, weather sensors, app control</td>
-                  <td style={tdStyle}>LED lighting, insulated panels, skylight integration</td>
-                </tr>
-              </tbody>
-            </table>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+    <div className="mb-16 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Applications
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Designed For Extraordinary Spaces
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        {
+          title: "Luxury Villas",
+          image: "/pergolas/applications/villa.jpg",
+        },
+
+        {
+          title: "Poolside Retreats",
+          image: "/pergolas/applications/pool.jpg",
+        },
+
+        {
+          title: "Hotels & Resorts",
+          image: "/pergolas/applications/hotel.jpg",
+        },
+
+        {
+          title: "Restaurants",
+          image: "/pergolas/applications/restaurant.jpg",
+        },
+
+        {
+          title: "Rooftop Terraces",
+          image: "/pergolas/applications/rooftop.jpg",
+        },
+
+        {
+          title: "Outdoor Lounges",
+          image: "/pergolas/applications/outdoor2.png",
+        },
+
+        {
+          title: "Commercial Spaces",
+          image: "/pergolas/applications/commercial2.png",
+        },
+
+        {
+          title: "Winter Gardens",
+          image: "/pergolas/applications/wintergarden2.png",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="group relative h-[320px] overflow-hidden rounded-[28px]"
+        >
+
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover transition duration-700 group-hover:scale-110"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+          <div className="absolute bottom-0 left-0 p-8">
+
+            <h3 className="text-2xl font-light text-white">
+              {item.title}
+            </h3>
+
           </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <button style={{ backgroundColor: 'var(--navy-primary)', color: 'white', border: 'none', padding: '1rem 3rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px', fontWeight: 'bold' }}>
-                Consult a Pergola Specialist
-              </button>
-            </Link>
-          </div>
+
         </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Configuration Options
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored To Your Project
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2">
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Roof Systems
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Fixed Aluminum Roof</li>
+          <li>• Retractable Aluminum Roof</li>
+          <li>• Tempered Glass Roof</li>
+          <li>• Insulated Panels</li>
+        </ul>
 
       </div>
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Side Enclosures
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Zip Screens</li>
+          <li>• Sliding Glass Systems</li>
+          <li>• Sliding Walls</li>
+          <li>• Roller Shutters</li>
+        </ul>
+
+      </div>
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Lighting
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Integrated LED Strips</li>
+          <li>• Ambient Lighting</li>
+          <li>• Spot Lighting</li>
+          <li>• Dimmable Controls</li>
+        </ul>
+
+      </div>
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Controls
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Remote Control</li>
+          <li>• Wall Switches</li>
+          <li>• Smartphone Integration</li>
+          <li>• Weather Automation</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Signature Projects
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Built Around Real Lifestyles
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
+        Every Apertolux pergola is designed around the architecture,
+        climate, and lifestyle of its owners.
+      </p>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-3">
+
+      {[
+        "/pergolas/aluminum/2.png",
+        "/pergolas/aluminum/1.png",
+        "/pergolas/aluminum/4.png",
+      ].map((image, index) => (
+
+        <div
+          key={index}
+          className="group overflow-hidden rounded-[32px]"
+        >
+
+          <div className="relative h-[520px]">
+
+            <Image
+              src={image}
+              alt="Pergola Project"
+              fill
+              className="object-cover transition duration-700 group-hover:scale-105"
+            />
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Why Apertolux
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        The Difference Is In The Details
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Custom Engineering",
+          text: "Every pergola is configured specifically for your project requirements.",
+        },
+
+        {
+          title: "Premium Materials",
+          text: "Marine-grade aluminum, architectural coatings, and proven components.",
+        },
+
+        {
+          title: "Professional Installation",
+          text: "Delivered and installed with precision by experienced specialists.",
+        },
+
+        {
+          title: "Long-Term Support",
+          text: "Ongoing service and assistance long after installation.",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8"
+        >
+
+          <h3 className="mb-4 text-xl font-medium text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Start Your Project
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      Design Your Perfect Outdoor Space
+    </h2>
+
+    <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-600">
+      Whether you&apos;re planning a private residence, rooftop terrace,
+      hospitality destination, or commercial project,
+      our specialists are ready to help bring your vision to life.
+    </p>
+
+    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
+      <Link
+        href="/contact"
+        className="rounded-full bg-[#0A192F] px-10 py-4 text-white transition hover:bg-[#172A45]"
+      >
+        Request Consultation
+      </Link>
+
+      <Link
+        href="/collections"
+        className="rounded-full border border-[#0A192F] px-10 py-4 text-[#0A192F] transition hover:bg-[#0A192F] hover:text-white"
+      >
+        Explore Collections
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
+      
     </div>
   );
 }
-
-// ==========================================
-// REUSABLE INLINE STYLES
-// ==========================================
-
-const flexRowStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
-};
-
-const flexHalfStyle = {
-  flex: '1 1 400px',
-};
-
-const configHeaderStyle = {
-  fontSize: '2.2rem',
-  color: 'var(--navy-primary)',
-  marginBottom: '1.5rem',
-  fontWeight: '700'
-};
-
-const listItemStyle = {
-  marginBottom: '1rem', 
-  color: 'var(--navy-light)', 
-  fontSize: '1.1rem',
-  fontWeight: '500',
-  display: 'flex',
-  alignItems: 'center'
-};
-
-// Table Styles
-const thStyle = {
-  backgroundColor: 'var(--navy-primary)',
-  color: 'white',
-  padding: '1.2rem',
-  fontWeight: '600',
-  borderBottom: '2px solid #0A192F',
-  borderRight: '1px solid rgba(255,255,255,0.1)'
-};
-
-const tdStyleLeft = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--navy-primary)',
-  fontWeight: '600',
-  width: '25%'
-};
-
-const tdStyle = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--text-muted)',
-  lineHeight: '1.5',
-  width: '37.5%'
-};
-
-const rowStripeStyle = {
-  backgroundColor: '#f9fbfd'
-};
