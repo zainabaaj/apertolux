@@ -477,7 +477,7 @@ const comfortModels = [
             </h2>
 
             <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Compare key specifications across our most popular Original Collection models.
+                Compare key specifications across our most popular Comfort Collection models.
             </p>
 
             </div>
