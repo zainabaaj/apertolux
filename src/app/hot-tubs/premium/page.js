@@ -557,7 +557,7 @@ export default function PremiumHotTubsPage() {
                 </h2>
 
                 <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-600">
-                Whether you're designing a private spa experience,
+                Whether you&apos;re designing a private spa experience,
                 luxury residence, wellness resort, or hospitality destination,
                 our specialists can help you select the ideal Premium model.
                 </p>
