@@ -43,219 +43,524 @@ export default function GlassRoofPage() {
       </section>
 
       <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
-        
-        {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            A Window to the Sky
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            With our glass roofs, you will be able to create new usable spaces and enjoy your terrace, patio, or garden all year long without the need for any lengthy and expensive building works. Built with materials and finishes of prime quality and durability, it perfectly integrates with its surroundings without distorting the view.
+        <section className="relative z-10 -mt-20 px-6">
+
+  <div className="mx-auto max-w-7xl rounded-[32px] border border-gray-200 bg-white p-8 shadow-xl md:p-12 lg:p-16">
+
+    <div className="text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Architectural Glass Systems
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl">
+        A Window To The Sky
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-600">
+        Create elegant outdoor living environments flooded with
+        natural light while remaining fully protected from rain,
+        wind, and seasonal weather conditions.
+      </p>
+
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        "Panoramic Views",
+        "Natural Daylight",
+        "Weather Protection",
+        "Architectural Design",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-2xl border border-gray-200 p-6 text-center"
+        >
+          <p className="font-medium text-[#0A192F]">
+            {item}
           </p>
         </div>
+      ))}
 
-        {/* Feature 1: Motorized Glide System */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Minimalist Motorized Glide</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Our movable systems feature motorized sliding panels which can be opened and closed to any desired position, allowing for a pleasant and gradual ventilation of the room. 
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Engineered for absolute longevity, the panels slide open without using any wheels in the rails. This innovative wheel-less friction system reduces maintenance to an absolute minimum while ensuring a silent, flawless glide.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Custom Configurations: Choose between 2 to 5 panels per rail.</li>
-              <li style={listItemStyle}>✓ Gradual Opening: Achieve a roof opening of 50%, 66%, 75%, or up to 80%.</li>
-              <li style={listItemStyle}>✓ Safe Installation: The installation for the panels can be easily made from the inside of the structure, without risks.</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-            <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/glass-roof/6.png" // Update with your actual image path
-                alt="Wheel-less Sliding Glass Roof Mechanism"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+    <div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+      <Image
+        src="/pergolas/glass-roof/6.png"
+        alt="Panoramic Glass Pergola"
+        fill
+        className="object-cover"
+      />
+
+    </div>
+
+    <div>
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Panoramic Architecture
+      </p>
+
+      <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+        Natural Light Without Compromise
+      </h2>
+
+      <p className="mb-6 text-lg leading-relaxed text-gray-600">
+        Glass pergola systems transform terraces, patios, and
+        outdoor living areas into bright architectural spaces
+        that maintain an uninterrupted connection with nature.
+      </p>
+
+      <p className="mb-8 text-lg leading-relaxed text-gray-600">
+        The minimalist structural design maximizes transparency,
+        allowing daylight to flood the space while preserving
+        unobstructed views throughout every season.
+      </p>
+
+      <div className="space-y-4">
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Panoramic views in every direction
         </div>
 
-        {/* Feature 2: Heavy-Duty Architecture & Illumination */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem', flexDirection: 'row-reverse' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Intelligent Drainage & Illumination</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Aesthetically beautiful, structurally impenetrable. The system utilizes an integrated 80mm diameter drainage system. This ensures water is easily driven towards the posts from where it seamlessly evacuates, keeping your outdoor space perfectly dry.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              To extend your living space into the evening, LED lights can be beautifully installed directly into the structural beams, allowing you to enjoy the roof day and night.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Weather Resistance: CE Certified for wind, snow, and watertightness.</li>
-              <li style={listItemStyle}>✓ Integrated Drainage: Concealed 80mm internal post evacuation.</li>
-              <li style={listItemStyle}>✓ Glazing Options: Choose Laminated Glass, Chamber Glass, or Polycarbonate.</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-             <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/glass-roof/7.png" // Update with your actual image path
-                alt="Integrated LED Lighting and Drainage System"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          Maximum daylight transmission
         </div>
 
-   
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>Technical Specifications</h2>
-          
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '800px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Specification</th>
-                  <th style={thStyle}>FIX System (Static)</th>
-                  <th style={thStyle}>MOV System (Motorized Sliding)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyleLeft}>Glazing Materials</td>
-                  <td style={tdStyle}>Laminated (5+5), Chamber (3+3/6/4), or 16mm Polycarbonate.</td>
-                  <td style={tdStyle}>Chamber (3+3/6/4), Laminated (5+5), or 16mm Polycarbonate.</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Maximum Projection</td>
-                  <td style={tdStyle}>Up to 6000 mm.</td>
-                  <td style={tdStyle}>Up to 6000 mm.</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Panel Configuration</td>
-                  <td style={tdStyle}>Fixed continuous surface.</td>
-                  <td style={tdStyle}>2, 3, 4, or 5 panels per rail (allowing 50% to 80% opening).</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Sliding Mechanism</td>
-                  <td style={tdStyle}>N/A (Fixed Roof)</td>
-                  <td style={tdStyle}>Wheel-less track design for minimal maintenance.</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Water Drainage</td>
-                  <td colSpan={2} style={tdStyle}>Internal 80mm diameter post evacuation system.</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Integrated Lighting</td>
-                  <td colSpan={2} style={tdStyle}>Optional LED lights installed directly into structural beams.</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Installation</td>
-                  <td colSpan={2} style={tdStyle}>Panels are safely installed from the inside of the structure.</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Certifications & Warranty</td>
-                  <td colSpan={2} style={tdStyle}>CE Certified, Qualanod, with a 3-year structural guarantee.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <button style={{ backgroundColor: 'var(--navy-primary)', color: 'white', border: 'none', padding: '1rem 3rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px', fontWeight: 'bold' }}>
-                Consult an Architectural Expert
-              </button>
-            </Link>
-          </div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          Seamless architectural integration
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+    <div>
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Motorized Innovation
+      </p>
+
+      <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+        Effortless Open-Air Living
+      </h2>
+
+      <p className="mb-6 text-lg leading-relaxed text-gray-600">
+        Motorized sliding glass roof systems allow panels to open
+        smoothly to any desired position, creating the perfect
+        balance between shade, ventilation, and sunlight.
+      </p>
+
+      <p className="mb-8 text-lg leading-relaxed text-gray-600">
+        Advanced wheel-free track technology minimizes maintenance
+        requirements while delivering silent, reliable operation
+        for years of daily use.
+      </p>
+
+      <div className="space-y-4">
+
+        <div className="rounded-xl bg-white p-4">
+          Up to 80% roof opening
+        </div>
+
+        <div className="rounded-xl bg-white p-4">
+          2–5 panel configurations
+        </div>
+
+        <div className="rounded-xl bg-white p-4">
+          Wheel-free sliding technology
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+      <Image
+        src="/pergolas/glass-roof/7.png"
+        alt="Motorized Sliding Glass Roof"
+        fill
+        className="object-cover"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Hidden Engineering
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Invisible Comfort
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
+        Every detail is designed to remain unseen, preserving
+        clean architectural lines while delivering exceptional
+        performance.
+      </p>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-2">
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Integrated Drainage
+        </h3>
+
+        <p className="leading-relaxed text-gray-600">
+          Rainwater is collected through concealed channels and
+          guided through internal 80mm drainage systems hidden
+          within the structure's posts, ensuring efficient
+          evacuation without visible gutters.
+        </p>
+
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Architectural LED Lighting
+        </h3>
+
+        <p className="leading-relaxed text-gray-600">
+          Optional integrated LED lighting can be embedded directly
+          into the structural beams, creating elegant illumination
+          that extends the usability of the space long after sunset.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Applications
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Designed For Exceptional Spaces
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        "Luxury Residences",
+        "Poolside Lounges",
+        "Outdoor Dining Areas",
+        "Hotel Terraces",
+        "Winter Gardens",
+        "Commercial Spaces",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-[28px] bg-white p-8 text-center shadow-sm"
+        >
+
+          <h3 className="text-xl font-light text-[#0A192F]">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Glazing Options
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored Performance
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-3">
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Laminated Glass
+        </h3>
+
+        <p className="leading-relaxed text-gray-600">
+          Premium transparency, enhanced safety,
+          acoustic insulation, and a refined architectural appearance.
+        </p>
+
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Chamber Glass
+        </h3>
+
+        <p className="leading-relaxed text-gray-600">
+          Improved thermal performance and enhanced energy efficiency
+          for year-round comfort.
+        </p>
+
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Polycarbonate
+        </h3>
+
+        <p className="leading-relaxed text-gray-600">
+          Lightweight, highly impact-resistant,
+          and ideal for demanding environments.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Performance
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Engineered For Every Season
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
+        Developed to meet demanding architectural standards,
+        our glass pergola systems combine durability,
+        weather resistance, and long-term reliability.
+      </p>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        {
+          title: "Wind Resistance",
+          value: "CE Certified",
+        },
+        {
+          title: "Snow Loads",
+          value: "Architectural Grade",
+        },
+        {
+          title: "Water Tightness",
+          value: "Integrated Drainage",
+        },
+        {
+          title: "Structure",
+          value: "Powder-Coated Aluminum",
+        },
+        {
+          title: "Roof Options",
+          value: "Glass or Polycarbonate",
+        },
+        {
+          title: "Opening",
+          value: "Up To 80%",
+        },
+        {
+          title: "Lighting",
+          value: "Integrated LEDs",
+        },
+        {
+          title: "Warranty",
+          value: "Structural Guarantee",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] bg-white p-8 shadow-sm"
+        >
+
+          <div className="mb-3 text-sm uppercase tracking-wider text-gray-500">
+            {item.title}
+          </div>
+
+          <div className="text-xl font-light text-[#0A192F]">
+            {item.value}
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Architectural Benefits
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        Why Designers Choose Glass
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Maximum Natural Light",
+          text: "Flood outdoor spaces with daylight while maintaining protection."
+        },
+        {
+          title: "Minimal Visual Impact",
+          text: "Preserve views and architectural openness."
+        },
+        {
+          title: "Elegant Integration",
+          text: "Complements both contemporary and traditional architecture."
+        },
+        {
+          title: "Year-Round Enjoyment",
+          text: "Extend outdoor living regardless of weather conditions."
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8"
+        >
+
+          <h3 className="mb-4 text-xl text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Start Your Project
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      Bring More Light Into Your Architecture
+    </h2>
+
+    <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-600">
+      Create elegant outdoor spaces that remain bright,
+      open, and protected throughout every season.
+      Our team will help you design a bespoke solution
+      tailored to your property.
+    </p>
+
+    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
+      <Link
+        href="/contact"
+        className="rounded-full bg-[#0A192F] px-10 py-4 text-white transition hover:bg-[#172A45]"
+      >
+        Request Consultation
+      </Link>
+
+      <Link
+        href="/collections"
+        className="rounded-full border border-[#0A192F] px-10 py-4 text-[#0A192F] transition hover:bg-[#0A192F] hover:text-white"
+      >
+        Explore Collections
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
+       </div>
     </div>
   );
 }
 
-// ==========================================
-// REUSABLE INLINE STYLES
-// ==========================================
-
-const flexRowStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
-};
-
-const flexHalfStyle = {
-  flex: '1 1 400px',
-};
-
-const configHeaderStyle = {
-  fontSize: '2.2rem',
-  color: 'var(--navy-primary)',
-  marginBottom: '1.5rem',
-  fontWeight: '700'
-};
-
-const listItemStyle = {
-  marginBottom: '1rem', 
-  color: 'var(--navy-light)', 
-  fontSize: '1.1rem',
-  fontWeight: '500',
-  display: 'flex',
-  alignItems: 'center'
-};
-
-// Table Styles
-const thStyle = {
-  backgroundColor: 'var(--navy-primary)',
-  color: 'white',
-  padding: '1.2rem',
-  fontWeight: '600',
-  borderBottom: '2px solid #0A192F',
-  borderRight: '1px solid rgba(255,255,255,0.1)'
-};
-
-const tdStyleLeft = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--navy-primary)',
-  fontWeight: '600',
-  width: '25%'
-};
-
-const tdStyle = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--text-muted)',
-  lineHeight: '1.5',
-  width: '37.5%'
-};
-
-const rowStripeStyle = {
-  backgroundColor: '#f9fbfd'
-};
