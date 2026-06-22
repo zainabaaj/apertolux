@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import ModelComparison from "@/components/ModelComparison";
 export const metadata = {
   title: 'Comfort Nordic Hot Tubs | Apertolux',
   description: 'Family-friendly hot tubs with ergonomic seating, easy-care surfaces, and safe, accessible design.',
@@ -125,7 +125,7 @@ export default function ComfortHotTubsPage() {
         </div>
 
         </section>
-      {/* Why Comfort Section */}
+        {/* Why Comfort Section */}
         <section className="bg-[#F8F8F8] py-24 lg:py-32">
 
         <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
@@ -182,7 +182,7 @@ export default function ComfortHotTubsPage() {
         </div>
 
         </section>
-    {/* Models */}
+        {/* Models */}
         <section className="py-24 lg:py-36">
 
         <div className="mx-auto max-w-[1700px] px-6 lg:px-12">
@@ -424,6 +424,37 @@ export default function ComfortHotTubsPage() {
             </div>
 
             </div>
+
+        </div>
+
+        </section>
+
+
+        {/* CTA */}
+        <section className="bg-[#0A192F] py-28 text-white">
+
+        <div className="mx-auto max-w-5xl px-6 text-center">
+
+            <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+            Original Collection
+            </p>
+
+            <h2 className="mb-8 text-4xl font-light md:text-6xl">
+            Experience Authentic
+            Nordic Wellness
+            </h2>
+
+            <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300">
+            Discover the warmth, craftsmanship, and timeless beauty
+            of traditional wood-fired hot tubs.
+            </p>
+
+            <Link
+            href="/contact"
+            className="inline-flex rounded-full bg-white px-10 py-5 text-[#0A192F] transition duration-300 hover:scale-105"
+            >
+            Request Consultation
+            </Link>
 
         </div>
 
