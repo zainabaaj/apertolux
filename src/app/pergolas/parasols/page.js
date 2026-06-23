@@ -48,7 +48,7 @@ export default function ParasolsPage() {
     <div className="text-center">
 
       <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
-        Apollo Collection
+        Svalbard Collection
       </p>
 
       <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl">
@@ -94,7 +94,7 @@ export default function ParasolsPage() {
 
       <Image
         src="/pergolas/parasols/1.jpg"
-        alt="Apollo Cantilever Parasol"
+        alt="Svalbard Cantilever Parasol"
         fill
         className="object-cover"
       />
@@ -272,7 +272,7 @@ export default function ParasolsPage() {
     <div className="mb-20 text-center text-white">
 
       <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
-        Why Apollo
+        Why Svalbard
       </p>
 
       <h2 className="text-4xl font-light md:text-6xl">
@@ -422,7 +422,7 @@ export default function ParasolsPage() {
     </h2>
 
     <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300">
-      Discover how the Apollo Collection can transform
+      Discover how the Svalbard Collection can transform
       terraces, poolside lounges, and outdoor living spaces
       into elegant destinations for relaxation and entertaining.
     </p>

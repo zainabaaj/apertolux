@@ -44,211 +44,302 @@ export default function RetractableAwningsPage() {
       <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
         
         {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            Total Protection. Streamlined Design.
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            Our QHC Full Cassette Awnings are designed to blend invisibly into your home&apos;s exterior. Unlike standard awnings, the fabric and articulating arms retract completely into a sleek, sealed aluminum casing. This unique inner-box design not only creates a flawless architectural aesthetic, but dramatically extends the lifespan of your canopy by protecting it from the elements when not in use.
+        <section className="relative z-10 -mt-20 px-6">
+
+  <div className="mx-auto max-w-7xl rounded-[32px] border border-gray-200 bg-white p-8 shadow-xl md:p-12 lg:p-16">
+
+    <div className="text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Full Cassette Awnings
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl">
+        Luxury Shade On Demand
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-600">
+        Designed to disappear when not in use and transform
+        outdoor spaces when needed, our full cassette awnings
+        combine architectural elegance with effortless comfort.
+      </p>
+
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        "Motorized Operation",
+        "Full Cassette Protection",
+        "Integrated LED Lighting",
+        "Premium European Fabrics",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-2xl border border-gray-200 p-6 text-center"
+        >
+          <p className="font-medium text-[#0A192F]">
+            {item}
           </p>
         </div>
 
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
         {/* Feature 1: The Cassette */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Flawless Architectural Cassette</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              We engineered the outer shell to be as beautiful as it is robust. The extruded aluminum casing features an integrated baffle design with absolutely zero exposed screws or hardware, ensuring a smooth, uninterrupted profile against your wall.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ Full Cassette: 100% protection for the fabric roller and arms</li>
-              <li style={listItemStyle}>✓ Invisible Hardware: Screwless exterior for a clean, modern look</li>
-              <li style={listItemStyle}>✓ Premium Finish: High-quality electrostatic powder coating</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-            <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/awning/1.png" // Update with your actual image path
-                alt="Full Cassette Awning Detail"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
-        </div>
+        <section className="py-24 lg:py-32">
 
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Full Cassette Technology
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      Protection Beyond Ordinary Awnings
+    </h2>
+
+    <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
+      Unlike conventional awnings, the entire fabric,
+      roller, and folding arm system retract into a
+      sealed aluminum cassette, protecting every
+      component from rain, dust, and UV exposure.
+    </p>
+
+  </div>
+
+</section>
         {/* Feature 2: High Performance Mechanics */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem', flexDirection: 'row-reverse' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>High-Performance Mechanics</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              The strength of the awning lies in its heavy-duty, arch-bridge chain folding arms. These rust-proof articulation joints provide massive tension to keep the premium Spanish Sauleda canvas perfectly taut, even at a maximum 3-meter projection. 
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              As evening falls, the awning transforms your patio with a built-in LED lighting system, elegantly embedded directly into the arm tubes and the base of the cassette.
-            </p>
-          </div>
-          <div style={flexHalfStyle}>
-             <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/awning/2.png" // Update with your actual image path
-                alt="Awning Chain Arms and LED Lighting"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
-        </div>
+    <section className="pb-28">
 
+  <div className="mx-auto max-w-7xl px-6 lg:px-12">
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      <div className="rounded-[30px] border border-gray-200 p-10">
+
+        <h3 className="mb-4 text-2xl font-light text-[#0A192F]">
+          Spanish Fabric
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed">
+          Premium Sauleda fabrics from Spain deliver exceptional UV
+          resistance and long-term color stability with up to 10 years
+          fade-resistance performance.
+        </p>
+
+      </div>
+
+      <div className="rounded-[30px] border border-gray-200 p-10">
+
+        <h3 className="mb-4 text-2xl font-light text-[#0A192F]">
+          Integrated LED Lighting
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed">
+          Seamlessly integrated LED strips within the cassette and arms
+          create a sophisticated atmosphere long after sunset.
+        </p>
+
+      </div>
+
+      <div className="rounded-[30px] border border-gray-200 p-10">
+
+        <h3 className="mb-4 text-2xl font-light text-[#0A192F]">
+          Chain Arm Technology
+        </h3>
+
+        <p className="text-gray-600 leading-relaxed">
+          Advanced chain-arm engineering ensures exceptional fabric
+          tension, smooth movement, and outstanding durability.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
    
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>Technical Specifications</h2>
-          
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '800px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Specification</th>
-                  <th style={thStyle}>QHC Full Cassette System</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyleLeft}>Frame Material</td>
-                  <td style={tdStyle}>Full aluminum alloy structure with electrostatic powder coating</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Cassette Design</td>
-                  <td style={tdStyle}>Fully enclosed inner-box design; Integrated baffle with zero exposed screws</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Fabric System</td>
-                  <td style={tdStyle}>Premium Spanish Sauleda® canvas (10-year fade-resistant warranty)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Folding Arms</td>
-                  <td style={tdStyle}>Heavy-duty, rust-proof arch-bridge internal chain mechanism</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Dimensions</td>
-                  <td style={tdStyle}>Custom Width: 2.0m up to 6.0m | Extension (Projection): 1.5m up to 3.0m</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Adjustable Pitch</td>
-                  <td style={tdStyle}>Wall-mounted inclination angle is fully adjustable from 0° to 25°</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Installation Types</td>
-                  <td style={tdStyle}>Standard Wall Mount (Flat) or Custom Ceiling Mount (Suspended)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Motorization</td>
-                  <td style={tdStyle}>Tubular motor integration with remote (Premium Somfy® or Dooya® options)</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Integrated Lighting</td>
-                  <td style={tdStyle}>Embedded LED lighting system in the folding arm tubes and cassette base</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Bespoke Finishes</td>
-                  <td style={tdStyle}>Custom side-panel covers (Chrome Rings, Standard Wood Grain, Black Walnut)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <button style={{ backgroundColor: 'var(--navy-primary)', color: 'white', border: 'none', padding: '1rem 3rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px', fontWeight: 'bold' }}>
-                Consult an Awning Specialist
-              </button>
-            </Link>
-          </div>
+   <section className="py-28 bg-[#F8F8F8]">
+
+  <div className="mx-auto max-w-7xl px-6 lg:px-12">
+
+    <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+      <div className="relative h-[650px] overflow-hidden rounded-[40px]">
+
+        <Image
+          src="/pergolas/awning/4.png"
+          alt="Retractable Awning"
+          fill
+          className="object-cover"
+        />
+
+      </div>
+
+      <div>
+
+        <p className="mb-4 text-xs uppercase tracking-[0.4em] text-[#C5A880]">
+          Architectural Design
+        </p>
+
+        <h2 className="mb-8 text-4xl md:text-5xl font-light text-[#0A192F]">
+          Invisible When Closed
+        </h2>
+
+        <p className="text-lg leading-relaxed text-gray-600 mb-8">
+          The elegant oval-shaped cassette completely conceals all
+          mechanical components when retracted. The result is a clean,
+          refined architectural detail rather than a visible outdoor
+          mechanism.
+        </p>
+
+        <div className="space-y-4">
+
+          <div>✓ Hidden hardware</div>
+          <div>✓ Flush side covers</div>
+          <div>✓ Seamless appearance</div>
+          <div>✓ Modern architectural aesthetics</div>
+
         </div>
 
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-28">
+
+  <div className="mx-auto max-w-7xl px-6 lg:px-12">
+
+    <div className="mb-20 text-center">
+
+      <h2 className="text-4xl md:text-5xl font-light text-[#0A192F]">
+        Designed For Exceptional Spaces
+      </h2>
+
+    </div>
+
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+
+        <div className="grid sm:grid-cols-2 gap-6">
+
+          {[
+            "Luxury Villas",
+            "Private Residences",
+            "Hotels",
+            "Restaurants",
+            "Beach Clubs",
+            "Rooftop Terraces",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-[24px] border border-gray-200 p-6"
+            >
+              {item}
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+      <div className="relative h-[600px] overflow-hidden rounded-[40px]">
+
+        <Image
+          src="/pergolas/awning/2.png"
+          alt="Applications"
+          fill
+          className="object-cover"
+        />
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-28 bg-[#0A192F] text-white">
+
+  <div className="mx-auto max-w-7xl px-6 lg:px-12">
+
+    <div className="mb-20 text-center">
+
+      <h2 className="text-4xl md:text-5xl font-light">
+        Technical Specifications
+      </h2>
+
+    </div>
+
+    <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+      {[
+        ["Width", "2m – 6m"],
+        ["Projection", "1.5m – 3m"],
+        ["Pitch", "0° – 25°"],
+        ["Frame", "Aluminum"],
+        ["Control", "Motorized"],
+        ["Lighting", "Integrated LED"],
+      ].map(([title, value]) => (
+        <div
+          key={title}
+          className="rounded-[24px] border border-white/10 p-8 text-center"
+        >
+          <div className="text-sm uppercase tracking-widest text-gray-400 mb-3">
+            {title}
+          </div>
+
+          <div className="text-xl font-light">
+            {value}
+          </div>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+<section className="py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <h2 className="mb-8 text-4xl md:text-6xl font-light text-[#0A192F]">
+      Extend Your Living Space Outdoors
+    </h2>
+
+    <p className="mb-12 text-xl text-gray-600">
+      Discover fully customized retractable awning solutions designed
+      specifically for your property.
+    </p>
+
+    <Link
+      href="/contact"
+      className="inline-flex items-center rounded-full bg-[#0A192F] px-10 py-5 text-white transition hover:bg-[#172A45]"
+    >
+      Request A Consultation
+    </Link>
+
+  </div>
+
+</section>
       </div>
     </div>
   );
 }
 
-// ==========================================
-// REUSABLE INLINE STYLES
-// ==========================================
-
-const flexRowStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
-};
-
-const flexHalfStyle = {
-  flex: '1 1 400px',
-};
-
-const configHeaderStyle = {
-  fontSize: '2.2rem',
-  color: 'var(--navy-primary)',
-  marginBottom: '1.5rem',
-  fontWeight: '700'
-};
-
-const listItemStyle = {
-  marginBottom: '1rem', 
-  color: 'var(--navy-light)', 
-  fontSize: '1.1rem',
-  fontWeight: '500',
-  display: 'flex',
-  alignItems: 'center'
-};
-
-// Table Styles
-const thStyle = {
-  backgroundColor: 'var(--navy-primary)',
-  color: 'white',
-  padding: '1.2rem',
-  fontWeight: '600',
-  borderBottom: '2px solid #0A192F',
-  borderRight: '1px solid rgba(255,255,255,0.1)'
-};
-
-const tdStyleLeft = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--navy-primary)',
-  fontWeight: '600',
-  width: '30%'
-};
-
-const tdStyle = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--text-muted)',
-  lineHeight: '1.5'
-};
-
-const rowStripeStyle = {
-  backgroundColor: '#f9fbfd'
-};
