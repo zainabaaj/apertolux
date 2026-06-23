@@ -41,226 +41,415 @@ export default function ParasolsPage() {
 
       <div className="container" style={{ marginTop: '-4rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
         
-        {/* Intro Block */}
-        <div style={{ backgroundColor: 'white', padding: '3rem 4rem', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)', marginBottom: '4rem', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '1.5rem' }}>
-            The Apollo Collection
-          </h2>
-          <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8', maxWidth: '800px', margin: '0 auto' }}>
-            Elevate your terrace or poolside with our Apollo series parasols. Engineered with heavy-duty aluminum frames and 250g PU-coated waterproof polyester, these parasols offer effortless operation and dynamic coverage. Whether you require a sleek center-pole design or a massive side-post cantilever system, enjoy ultimate UV80+ protection with a refined aesthetic.
+       <section className="relative z-10 -mt-20 px-6">
+
+  <div className="mx-auto max-w-7xl rounded-[32px] border border-gray-200 bg-white p-8 shadow-xl md:p-12 lg:p-16">
+
+    <div className="text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Apollo Collection
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-5xl">
+        The Art Of Luxury Shade
+      </h2>
+
+      <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-600">
+        Elegant freestanding parasols designed to create
+        sophisticated outdoor environments while providing
+        exceptional protection from sun and weather.
+      </p>
+
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        "360° Rotation",
+        "UV80+ Protection",
+        "Premium Aluminum",
+        "Smart Accessories",
+      ].map((item) => (
+        <div
+          key={item}
+          className="rounded-2xl border border-gray-200 p-6 text-center"
+        >
+          <p className="font-medium text-[#0A192F]">
+            {item}
           </p>
         </div>
+      ))}
 
-        {/* Feature 1: Cantilever & Rotation */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>360° Cantilever System</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Our flagship 3x4m and 4x4m cantilever models are designed to maximize your usable space beneath the canopy. The heavy-duty 120x76mm aluminum side-post features an integrated turning mechanism, allowing the entire parasol to rotate a full 360 degrees to track the sun.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Opening and closing is effortless via a removable hand crank. When closed, the specialized retractable system allows the canopy to fold cleanly parallel against the mast, keeping your deck completely unobstructed.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ 360° Rotation: Follow the sun without moving the heavy base</li>
-              <li style={listItemStyle}>✓ Parallel Retraction: Folds tightly against the pole to save space</li>
-              <li style={listItemStyle}>✓ Wheeled Granite Base: 180kg stone base with integrated mobility wheels</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-            <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/parasols/1.jpg" // Update with your actual image path
-                alt="360 Degree Cantilever Parasol Rotation"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+    </div>
+
+  </div>
+
+</section>
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+
+    <div className="relative h-[450px] overflow-hidden rounded-[32px]">
+
+      <Image
+        src="/pergolas/parasols/1.jpg"
+        alt="Apollo Cantilever Parasol"
+        fill
+        className="object-cover"
+      />
+
+    </div>
+
+    <div>
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Dynamic Shade
+      </p>
+
+      <h2 className="mb-8 text-4xl font-light text-[#0A192F]">
+        Follow The Sun
+      </h2>
+
+      <p className="mb-6 text-lg leading-relaxed text-gray-600">
+        Our cantilever parasols rotate a full 360 degrees,
+        allowing you to reposition shade effortlessly throughout
+        the day without moving furniture or bases.
+      </p>
+
+      <p className="mb-8 text-lg leading-relaxed text-gray-600">
+        The side-post design keeps the shaded area completely
+        unobstructed while maintaining exceptional structural stability.
+      </p>
+
+      <div className="space-y-4">
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Full 360° Rotation
         </div>
 
-        {/* Feature 2: Canvas & Smart Accessories */}
-        <div style={{ ...flexRowStyle, marginBottom: '6rem', flexDirection: 'row-reverse' }}>
-          <div style={flexHalfStyle}>
-            <h3 style={configHeaderStyle}>Premium Canvas & Smart Tech</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              The canopy is tailored from high-density 250g polyester, treated with a specialized polyurethane (PU) coating to ensure absolute waterproof performance while delivering a certified UV80+ protection rating.
-            </p>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-              Transition seamlessly into the night with our smart integrated accessories. The central hub can be equipped with a rechargeable LED lighting system and a Bluetooth audio speaker, turning your parasol into an entertainment centerpiece.
-            </p>
-            <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '2rem' }}>
-              <li style={listItemStyle}>✓ UV80+ Canvas: Available in White, Dove, and Dark Gray</li>
-              <li style={listItemStyle}>✓ Frame Finishes: White, Dove, Graphite, or Teak Wood effect</li>
-              <li style={listItemStyle}>✓ Smart Hub: Optional LED lighting and Bluetooth audio integration</li>
-            </ul>
-          </div>
-          <div style={flexHalfStyle}>
-             <div
-              style={{
-                width: '100%',
-                height: '400px',
-                position: 'relative',
-                borderRadius: '8px',
-                overflow: 'hidden',
-              }}
-            >
-              <Image
-                src="/pergolas/parasols/2.jpg" // Update with your actual image path
-                alt="Parasol LED Lighting and Fabric Detail"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          Space-Saving Cantilever Design
         </div>
 
-
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <div style={{ padding: '4rem 0', borderTop: '1px solid #eaeaea' }}>
-          <h2 style={{ textAlign: 'center', fontSize: '2.5rem', color: 'var(--navy-primary)', marginBottom: '3rem' }}>System Specifications</h2>
-          
-          <div style={{ overflowX: 'auto', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid #eaeaea' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '800px' }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Specification</th>
-                  <th style={thStyle}>Apollo Standard (Center Pole)</th>
-                  <th style={thStyle}>Apollo Cantilever (Side Post)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style={tdStyleLeft}>Canopy Dimensions</td>
-                  <td style={tdStyle}>200 x 200 cm</td>
-                  <td style={tdStyle}>300 x 400 cm  |  400 x 400 cm</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Total Height</td>
-                  <td style={tdStyle}>250 cm</td>
-                  <td style={tdStyle}>300 cm</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Aluminum Mast / Pole</td>
-                  <td style={tdStyle}>38 mm diameter (Chrome-plated tip)</td>
-                  <td style={tdStyle}>120 x 76 mm heavy-duty oval profile</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Rib Architecture</td>
-                  <td style={tdStyle}>4 Aluminum Ribs (20 mm)</td>
-                  <td style={tdStyle}>7 Aluminum Ribs (20 x 35 mm)</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Fabric System</td>
-                  <td colSpan={2} style={tdStyle}>250g Polyester with PU coating (Waterproof & UV80+ Certified)</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Opening Mechanism</td>
-                  <td style={tdStyle}>Intuitive Manual Push-Up (locks into place)</td>
-                  <td style={tdStyle}>Removable Hand Crank with Sliding Guides</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Rotation & Retraction</td>
-                  <td style={tdStyle}>Static Canopy</td>
-                  <td style={tdStyle}>360° turning mast; canopy closes parallel to the pole</td>
-                </tr>
-                <tr style={rowStripeStyle}>
-                  <td style={tdStyleLeft}>Base Unit</td>
-                  <td style={tdStyle}>40 Kg Steel Base (50x50x2 cm)</td>
-                  <td style={tdStyle}>180 Kg Granite Base with integrated wheels (80x80x10 cm)</td>
-                </tr>
-                <tr>
-                  <td style={tdStyleLeft}>Smart Options</td>
-                  <td style={tdStyle}>Not Available</td>
-                  <td style={tdStyle}>Rechargeable LED umbrella lights & Bluetooth speaker system</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <Link href="/contact" style={{ textDecoration: 'none' }}>
-              <button style={{ backgroundColor: 'var(--navy-primary)', color: 'white', border: 'none', padding: '1rem 3rem', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '4px', fontWeight: 'bold' }}>
-                Consult a Shade Specialist
-              </button>
-            </Link>
-          </div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          Smooth Crank Operation
         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Applications
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Designed For Exceptional Outdoor Spaces
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        "Luxury Villas",
+        "Poolside Lounges",
+        "Hotel Terraces",
+        "Beach Clubs",
+        "Outdoor Restaurants",
+        "Private Gardens",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-[28px] border border-gray-200 p-8 text-center transition duration-300 hover:shadow-lg"
+        >
+
+          <h3 className="text-xl font-light text-[#0A192F]">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="bg-gray-50 py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Customization
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored To Your Environment
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-2">
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Fabric Colors
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• White</li>
+          <li>• Dove Grey</li>
+          <li>• Dark Grey</li>
+        </ul>
+
+      </div>
+
+      <div className="rounded-[32px] bg-white p-10">
+
+        <h3 className="mb-6 text-2xl font-light text-[#0A192F]">
+          Frame Finishes
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• White</li>
+          <li>• Dove Grey</li>
+          <li>• Graphite</li>
+          <li>• Teak Wood Effect</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Lifestyle
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      From Sunny Afternoons To Elegant Evenings
+    </h2>
+
+    <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
+      Integrated lighting and optional Bluetooth audio transform
+      your parasol into the focal point of outdoor entertaining.
+      Enjoy relaxed lunches, sunset cocktails, and evening
+      gatherings beneath beautifully illuminated shade.
+    </p>
+
+  </div>
+
+</section>
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Why Apollo
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        Luxury In Every Detail
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Architectural Design",
+          text: "Sophisticated forms that elevate outdoor environments.",
+        },
+
+        {
+          title: "Premium Protection",
+          text: "Waterproof fabric with certified UV80+ performance.",
+        },
+
+        {
+          title: "Dynamic Coverage",
+          text: "360° rotation for shade exactly where you need it.",
+        },
+
+        {
+          title: "Smart Accessories",
+          text: "Integrated lighting and Bluetooth entertainment options.",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8"
+        >
+
+          <h3 className="mb-4 text-xl text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section> 
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Specifications
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Built To Perform
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        {
+          title: "Fabric",
+          value: "250g Waterproof Polyester",
+        },
+
+        {
+          title: "UV Protection",
+          value: "UV80+ Certified",
+        },
+
+        {
+          title: "Rotation",
+          value: "360° Cantilever System",
+        },
+
+        {
+          title: "Frame",
+          value: "Powder-Coated Aluminum",
+        },
+
+        {
+          title: "Operation",
+          value: "Manual Crank System",
+        },
+
+        {
+          title: "Base",
+          value: "Granite or Steel",
+        },
+
+        {
+          title: "Lighting",
+          value: "Optional LED System",
+        },
+
+        {
+          title: "Audio",
+          value: "Bluetooth Speaker Option",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-gray-200 bg-white p-8"
+        >
+
+          <div className="mb-3 text-sm uppercase tracking-wider text-gray-500">
+            {item.title}
+          </div>
+
+          <div className="text-xl font-light text-[#0A192F]">
+            {item.value}
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+      Start Your Project
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-white md:text-6xl">
+      Create Your Perfect Shade Experience
+    </h2>
+
+    <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-300">
+      Discover how the Apollo Collection can transform
+      terraces, poolside lounges, and outdoor living spaces
+      into elegant destinations for relaxation and entertaining.
+    </p>
+
+    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
+      <Link
+        href="/contact"
+        className="rounded-full bg-white px-10 py-4 text-[#0A192F] transition hover:bg-gray-100"
+      >
+        Request Consultation
+      </Link>
+
+      <Link
+        href="/collections"
+        className="rounded-full border border-white px-10 py-4 text-white transition hover:bg-white hover:text-[#0A192F]"
+      >
+        Explore Collections
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
 
       </div>
     </div>
   );
 }
-
-// ==========================================
-// REUSABLE INLINE STYLES
-// ==========================================
-
-const flexRowStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
-  gap: '4rem',
-};
-
-const flexHalfStyle = {
-  flex: '1 1 400px',
-};
-
-const configHeaderStyle = {
-  fontSize: '2.2rem',
-  color: 'var(--navy-primary)',
-  marginBottom: '1.5rem',
-  fontWeight: '700'
-};
-
-const listItemStyle = {
-  marginBottom: '1rem', 
-  color: 'var(--navy-light)', 
-  fontSize: '1.1rem',
-  fontWeight: '500',
-  display: 'flex',
-  alignItems: 'center'
-};
-
-// Table Styles
-const thStyle = {
-  backgroundColor: 'var(--navy-primary)',
-  color: 'white',
-  padding: '1.2rem',
-  fontWeight: '600',
-  borderBottom: '2px solid #0A192F',
-  borderRight: '1px solid rgba(255,255,255,0.1)'
-};
-
-const tdStyleLeft = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--navy-primary)',
-  fontWeight: '600',
-  width: '25%'
-};
-
-const tdStyle = {
-  padding: '1.2rem',
-  borderBottom: '1px solid #eaeaea',
-  borderRight: '1px solid #eaeaea',
-  color: 'var(--text-muted)',
-  lineHeight: '1.5',
-  width: '37.5%'
-};
-
-const rowStripeStyle = {
-  backgroundColor: '#f9fbfd'
-};

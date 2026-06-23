@@ -240,7 +240,7 @@ export default function GlassRoofPage() {
         <p className="leading-relaxed text-gray-600">
           Rainwater is collected through concealed channels and
           guided through internal 80mm drainage systems hidden
-          within the structure's posts, ensuring efficient
+          within the structure&apos;s posts, ensuring efficient
           evacuation without visible gutters.
         </p>
 
