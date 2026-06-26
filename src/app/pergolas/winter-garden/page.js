@@ -35,140 +35,500 @@ export default function WinterGardenPage() {
       <main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 lg:-mt-24 pb-16 lg:pb-24 flex flex-col items-center">
         
         {/* Intro Block */}
-        <div className="w-full bg-white p-8 sm:p-12 lg:p-16 rounded-2xl shadow-xl mb-16 lg:mb-24 text-center flex flex-col items-center">
-          <h2 className="text-3xl sm:text-4xl text-[#0A192F] font-bold mb-6 tracking-tight">
-            A 365-Day Living Space
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-4xl text-center">
-            A true Winter Garden is the ultimate architectural extension. By seamlessly integrating our cutting-edge thermal glass facades and motorized zip screens directly into the perimeter of your bioclimatic pergola, we create a fully sealed, temperature-controlled outdoor room. Enjoy the beauty of your surroundings wrapped in total comfort, completely shielded from freezing winds, rain, and snow.
+        <section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Lifestyle
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      Outdoor Living Without Seasons
+    </h2>
+
+    <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-600">
+      Experience your terrace, garden, pool area, or rooftop
+      throughout the entire year. Protected from rain, wind,
+      snow, and excessive heat, your Winter Garden becomes
+      a seamless extension of your home.
+    </p>
+
+  </div>
+
+</section>
+        {/* Feature 1: Architectural Glass Systems */}
+      <section className="bg-[#F8F8F8] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Intelligent Engineering
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        A Complete Climate Ecosystem
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "Adjustable Louvers",
+          text: "Control sunlight and natural ventilation."
+        },
+
+        {
+          title: "Motorized Glass",
+          text: "Transform open terraces into enclosed spaces."
+        },
+
+        {
+          title: "Zip Screens",
+          text: "Block wind, rain, and excessive glare."
+        },
+
+        {
+          title: "Weather Sensors",
+          text: "Automatically respond to changing conditions."
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] bg-white p-8"
+        >
+
+          <h3 className="mb-4 text-xl text-[#0A192F]">
+            {item.title}
+          </h3>
+
+          <p className="text-gray-600">
+            {item.text}
           </p>
+
         </div>
 
-        {/* Feature 1: Architectural Glass Systems */}
-        <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 mb-16 lg:mb-24">
-          <div className="w-full lg:w-1/2 flex flex-col order-2 lg:order-1">
-            <h3 className="text-2xl sm:text-3xl text-[#0A192F] font-bold mb-6">
-              Thermal Glass Integration
-            </h3>
-            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-              Create an impenetrable barrier against the cold without sacrificing your panoramic views. Our structural glass enclosures are custom-engineered to integrate flawlessly with our pergola columns, utilizing EPDM weather seals for maximum thermal retention.
-            </p>
-            <ul className="space-y-4">
-              <li className="flex items-start text-base sm:text-lg text-[#172A45] font-medium">
-                <span className="mr-4 text-[#C5A880] font-bold shrink-0">✓</span> 
-                <span>Motorized Guillotine: Vertically sliding glass panels that double as a balustrade when open.</span>
-              </li>
-              <li className="flex items-start text-base sm:text-lg text-[#172A45] font-medium">
-                <span className="mr-4 text-[#C5A880] font-bold shrink-0">✓</span> 
-                <span>Hebeschiebe (Lift & Slide): Ultra-smooth, highly insulated horizontal sliding tracks.</span>
-              </li>
-              <li className="flex items-start text-base sm:text-lg text-[#172A45] font-medium">
-                <span className="mr-4 text-[#C5A880] font-bold shrink-0">✓</span> 
-                <span>Double Glazing: Engineered to minimize heat loss and prevent interior condensation.</span>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
-             <div className="w-full aspect-video lg:aspect-[4/3] max-w-[600px] bg-[#172A45] rounded-2xl flex items-center justify-center text-white/50 shadow-lg overflow-hidden">
-                <Image
-                  src="/pergolas/winter-garden/2.png" // Update with your actual image path
-                  alt="Motorized Guillotine Glass Facade"
-                  width={600}
-                  height={450}
-                  className="object-cover w-full h-full opacity-80"
-                />
-             </div>
-          </div>
-        </section>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
         {/* Feature 2: Zip Screens & Climate Control */}
-        <section className="w-full flex flex-col lg:flex-row-reverse items-center justify-center gap-10 lg:gap-16 mb-16 lg:mb-24">
-          <div className="w-full lg:w-1/2 flex flex-col order-2 lg:order-1">
-            <h3 className="text-2xl sm:text-3xl text-[#0A192F] font-bold mb-6">
-              Dynamic Screens & Climate Control
-            </h3>
-            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-              For highly versatile weather protection, our motorized Zip Screens operate on an impenetrable zipper track hidden within the structural posts. The micro-perforated fabric blocks freezing winds, heavy rain, and harsh sunlight while maintaining privacy.
-            </p>
-            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-              Combined with the bioclimatic roof&apos;s adjustable louvers and hidden 80mm internal drainage system, the entire structure acts as an autonomous climate engine. Intelligent sensors automatically close the roof and screens at the first sign of severe weather.
-            </p>
-          </div>
-          <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
-             <div className="w-full aspect-video lg:aspect-[4/3] max-w-[600px] bg-slate-800 rounded-2xl flex items-center justify-center text-white/50 shadow-lg overflow-hidden">
-                <Image
-                  src="/pergolas/winter-garden/3.png" // Update with your actual image path
-                  alt="Motorized Zip Screen Enclosure"
-                  width={600}
-                  height={450}
-                  className="object-cover w-full h-full opacity-80"
-                />
-             </div>
-          </div>
-        </section>
+       <section className="py-24 lg:py-32">
 
-        {/* =========================================
-            TECHNICAL SPECIFICATIONS TABLE
-        ========================================= */}
-        <section className="w-full pt-12 lg:pt-16 border-t border-gray-200 flex flex-col items-center">
-          <h2 className="text-center text-3xl sm:text-4xl text-[#0A192F] font-bold mb-8 lg:mb-12">
-            System Specifications
-          </h2>
-          
-          <div className="w-full max-w-5xl overflow-x-auto bg-white rounded-xl shadow-sm border border-gray-200">
-            <table className="w-full min-w-[700px] text-left border-collapse">
-              <thead>
-                <tr>
-                  <th className="bg-[#0A192F] text-white p-5 font-semibold border-b-2 border-[#0A192F] border-r border-white/10 w-1/4">
-                    Feature
-                  </th>
-                  <th className="bg-[#0A192F] text-white p-5 font-semibold border-b-2 border-[#0A192F] border-r border-white/10 w-3/8">
-                    Glass Facades (Guillotine/Sliding)
-                  </th>
-                  <th className="bg-[#0A192F] text-white p-5 font-semibold border-b-2 border-[#0A192F] w-3/8">
-                    Zip Screens & PVC Enclosures
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 text-sm sm:text-base">
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-5 border-r border-gray-100 text-[#0A192F] font-bold align-top bg-gray-50">System Types</td>
-                  <td className="p-5 border-r border-gray-100 text-gray-600 align-top">Motorized Vertical Guillotine or Lift & Slide (Hebeschiebe)</td>
-                  <td className="p-5 text-gray-600 align-top">Zip-Track Micro-perforated Screen or Transparent Marine PVC</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-5 border-r border-gray-100 text-[#0A192F] font-bold align-top bg-gray-50">Glazing / Fabric</td>
-                  <td className="p-5 border-r border-gray-100 text-gray-600 align-top">Tempered safety glass or highly insulated double-glazing</td>
-                  <td className="p-5 text-gray-600 align-top">Breathable water-resistant mesh or 100% clear marine PVC</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-5 border-r border-gray-100 text-[#0A192F] font-bold align-top bg-gray-50">Structural Integration</td>
-                  <td className="p-5 border-r border-gray-100 text-gray-600 align-top">Flush-mounts to columns; acts as a structural safety balustrade when open</td>
-                  <td className="p-5 text-gray-600 align-top">Concealed top cassette; zipper tracks mount invisibly inside structural columns</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-5 border-r border-gray-100 text-[#0A192F] font-bold align-top bg-gray-50">Motorization</td>
-                  <td className="p-5 border-r border-gray-100 text-gray-600 align-top">Heavy-duty tubular lifting motors with remote and smart-home integration</td>
-                  <td className="p-5 text-gray-600 align-top">Somfy® 20 NM tubular motors with multi-channel remote</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-5 border-r border-gray-100 text-[#0A192F] font-bold align-top bg-gray-50">Weather Sealing</td>
-                  <td className="p-5 border-r border-gray-100 text-gray-600 align-top">EPDM gaskets and thermal breaks for maximum heat retention</td>
-                  <td className="p-5 text-gray-600 align-top">High-tension zip-track prevents fabric blowout in severe winds</td>
-                </tr>
-              </tbody>
-            </table>
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored To Every Project
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-3">
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+        <h3 className="mb-4 text-2xl text-[#0A192F]">
+          Freestanding
+        </h3>
+
+        <p className="text-gray-600">
+          Independent garden pavilions and poolside retreats.
+        </p>
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+        <h3 className="mb-4 text-2xl text-[#0A192F]">
+          Wall Mounted
+        </h3>
+
+        <p className="text-gray-600">
+          Seamless integration with residential architecture.
+        </p>
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+        <h3 className="mb-4 text-2xl text-[#0A192F]">
+          Commercial
+        </h3>
+
+        <p className="text-gray-600">
+          Hotels, restaurants, rooftop lounges and resorts.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+
+    <div className="relative h-[650px] overflow-hidden rounded-[40px]">
+
+      <Image
+        src="/pergolas/winter-garden/4.png"
+        alt="Luxury Winter Garden"
+        fill
+        className="object-cover"
+      />
+
+    </div>
+
+    <div>
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Luxury Living
+      </p>
+
+      <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-5xl">
+        A Space That Evolves With Your Lifestyle
+      </h2>
+
+      <p className="text-lg leading-relaxed text-gray-600 mb-8">
+        From intimate family gatherings to elegant entertaining,
+        a Winter Garden becomes the most versatile space in your home.
+        Bright, protected, and seamlessly connected to nature,
+        it creates a unique environment for everyday living.
+      </p>
+
+      <div className="space-y-4">
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Year-Round Dining
+        </div>
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Outdoor Lounge Areas
+        </div>
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Poolside Retreats
+        </div>
+
+        <div className="rounded-xl border border-gray-200 p-4">
+          Hospitality Spaces
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+        
+      <section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        Designed For Exceptional Spaces
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        "Luxury Villas",
+        "Pool Enclosures",
+        "Hotels & Resorts",
+        "Rooftop Lounges",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8 text-center text-white"
+        >
+          {item}
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Technical Highlights
+      </h2>
+
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      {[
+        ["Roof System", "Motorized Louvers"],
+        ["Glass", "Tempered / Double Glazed"],
+        ["Screens", "Zip Track Technology"],
+        ["Drainage", "Hidden Internal"],
+        ["Automation", "Smart Home Ready"],
+        ["Lighting", "Integrated LED"],
+        ["Sensors", "Rain & Wind"],
+        ["Structure", "Powder Coated Aluminum"],
+      ].map(([title, value]) => (
+
+        <div
+          key={title}
+          className="rounded-[28px] border border-gray-200 p-8"
+        >
+
+          <div className="mb-3 text-sm uppercase tracking-wider text-gray-500">
+            {title}
           </div>
-          
-          {/* Call to Action */}
-          <div className="flex justify-center w-full mt-12">
-            <Link href="/contact" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto bg-[#0A192F] hover:bg-[#172A45] text-white px-10 py-4 text-base sm:text-lg rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl focus:ring-4 focus:ring-[#0A192F]/20 active:scale-[0.98]">
-                Consult a Winter Garden Expert
-              </button>
-            </Link>
+
+          <div className="text-xl text-[#0A192F]">
+            {value}
           </div>
-        </section>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-6xl px-6">
+
+    <div className="rounded-[40px] bg-[#F8F8F8] p-10 md:p-16 lg:p-20">
+
+      <div className="text-center">
+
+        <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+          Long-Term Value
+        </p>
+
+        <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+          More Than An Outdoor Structure
+        </h2>
+
+        <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-600">
+          A professionally designed Winter Garden adds usable living
+          space, increases property appeal, and creates a year-round
+          entertainment environment. It transforms underutilized
+          outdoor areas into premium architectural assets.
+        </p>
+
+      </div>
+
+      <div className="mt-16 grid gap-8 md:grid-cols-3">
+
+        <div className="text-center">
+          <div className="mb-4 text-4xl font-light text-[#0A192F]">
+            365
+          </div>
+          <div className="text-gray-600">
+            Days of Outdoor Living
+          </div>
+        </div>
+
+        <div className="text-center">
+          <div className="mb-4 text-4xl font-light text-[#0A192F]">
+            4
+          </div>
+          <div className="text-gray-600">
+            Seasons of Comfort
+          </div>
+        </div>
+
+        <div className="text-center">
+          <div className="mb-4 text-4xl font-light text-[#0A192F]">
+            100%
+          </div>
+          <div className="text-gray-600">
+            Custom Designed
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section className="bg-[#0A192F] py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center text-white">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-400">
+        Why Apertolux
+      </p>
+
+      <h2 className="text-4xl font-light md:text-6xl">
+        Designed Without Compromise
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+      {[
+        {
+          title: "European Engineering",
+          text: "Precision-built systems developed for long-term durability."
+        },
+
+        {
+          title: "Architectural Integration",
+          text: "Designed to complement contemporary and classic architecture."
+        },
+
+        {
+          title: "Climate Intelligence",
+          text: "Automated weather response for year-round comfort."
+        },
+
+        {
+          title: "Fully Custom",
+          text: "Every project is tailored to the property and lifestyle."
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="rounded-[28px] border border-white/10 bg-white/5 p-8"
+        >
+
+          <h3 className="mb-4 text-xl text-white">
+            {item.title}
+          </h3>
+
+          <p className="leading-relaxed text-gray-300">
+            {item.text}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-20 text-center">
+
+      <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+        Customization
+      </p>
+
+      <h2 className="text-4xl font-light text-[#0A192F] md:text-6xl">
+        Tailored To Your Vision
+      </h2>
+
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-2">
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl text-[#0A192F]">
+          Structure Options
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Wall Mounted</li>
+          <li>• Freestanding</li>
+          <li>• Corner Installation</li>
+          <li>• Large Commercial Layouts</li>
+        </ul>
+
+      </div>
+
+      <div className="rounded-[32px] border border-gray-200 p-10">
+
+        <h3 className="mb-6 text-2xl text-[#0A192F]">
+          Finishes & Features
+        </h3>
+
+        <ul className="space-y-3 text-gray-600">
+          <li>• Custom RAL Colors</li>
+          <li>• Integrated LED Lighting</li>
+          <li>• Sliding Glass Systems</li>
+          <li>• Motorized Zip Screens</li>
+          <li>• Smart Home Controls</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section className="py-24 lg:py-32">
+
+  <div className="mx-auto max-w-5xl px-6 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.4em] text-gray-500">
+      Start Your Project
+    </p>
+
+    <h2 className="mb-8 text-4xl font-light text-[#0A192F] md:text-6xl">
+      Create Your Year-Round Retreat
+    </h2>
+
+    <p className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed text-gray-600">
+      Discover how a custom Apertolux Winter Garden can transform
+      your terrace, garden, rooftop, or poolside area into a
+      sophisticated four-season living environment.
+    </p>
+
+    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+
+      <Link
+        href="/contact"
+        className="rounded-full bg-[#0A192F] px-10 py-4 text-white transition hover:bg-[#172A45]"
+      >
+        Request Consultation
+      </Link>
+
+      <Link
+        href="/collections"
+        className="rounded-full border border-[#0A192F] px-10 py-4 text-[#0A192F] transition hover:bg-[#0A192F] hover:text-white"
+      >
+        Explore Collections
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
 
       </main>
     </div>
